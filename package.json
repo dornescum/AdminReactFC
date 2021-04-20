@@ -1,4 +1,4 @@
- {
+{
   "name": "angle",
   "version": "0.0.0",
   "description": "Angle - Bootstrap Admin Template",
@@ -105,6 +105,7 @@
     "reactstrap": "8.9.0",
     "redux": "4.0.5",
     "rtlcss": "2.6.2",
+    "sass": "^1.32.11",
     "screenfull": "3.3.3",
     "simple-line-icons": "2.5.5",
     "spinkit": "1.2.5",
