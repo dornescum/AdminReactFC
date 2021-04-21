@@ -97,6 +97,7 @@ const BlogArticle = lazy(() => import('./components/Blog/BlogArticles'));
 const BlogArticleView = lazy(() => import('./components/Blog/BlogArticleView'));
 
 const ForumHome = lazy(() => import('./components/Forum/ForumHome'));
+const Test = lazy(() => import('./components/Test/Test'));
 
 
 // List of routes that uses the page layout
@@ -184,6 +185,7 @@ const Routes = ({ location }) => {
                                 <Route path="/form-wizard" component={waitFor(FormWizard)}/>
                                 <Route path="/form-upload" component={waitFor(FormUpload)}/>
                                 <Route path="/form-cropper" component={waitFor(FormCropper)}/>
+                                <Route path="/test" component={waitFor(Test)}/>
 
                                 {/*Charts*/}
                                 <Route path="/chart-flot" component={waitFor(ChartFlot)}/>

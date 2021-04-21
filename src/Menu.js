@@ -143,6 +143,10 @@ const Menu = [
             {
                 name: 'Cropper',
                 path: '/form-cropper',
+            },
+            {
+                name: 'Test',
+                path: '/test',
             }
         ]
     },
