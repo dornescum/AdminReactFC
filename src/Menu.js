@@ -147,7 +147,12 @@ const Menu = [
             {
                 name: 'Test',
                 path: '/test',
+            },
+             {
+                name: 'Date generale',
+                path: '/date-generale',
             }
+
         ]
     },
     {

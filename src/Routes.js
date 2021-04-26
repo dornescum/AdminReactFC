@@ -7,6 +7,7 @@ import PageLoader from './components/Common/PageLoader';
 
 import Base from './components/Layout/Base';
 import BasePage from './components/Layout/BasePage';
+import DateGenerale from "./components/DateGenerale/DateGenerale";
 // import BaseHorizontal from './components/Layout/BaseHorizontal';
 
 /* Used to render a lazy component with react-router */
@@ -98,6 +99,7 @@ const BlogArticleView = lazy(() => import('./components/Blog/BlogArticleView'));
 
 const ForumHome = lazy(() => import('./components/Forum/ForumHome'));
 const Test = lazy(() => import('./components/Test/Test'));
+// const DateGenerale = lazy(()=> import('./components/DateGenerale/DateGenerale'));
 
 
 // List of routes that uses the page layout
@@ -186,6 +188,7 @@ const Routes = ({ location }) => {
                                 <Route path="/form-upload" component={waitFor(FormUpload)}/>
                                 <Route path="/form-cropper" component={waitFor(FormCropper)}/>
                                 <Route path="/test" component={waitFor(Test)}/>
+                                <Route path="/date-generale" component={waitFor(DateGenerale)}/>
 
                                 {/*Charts*/}
                                 <Route path="/chart-flot" component={waitFor(ChartFlot)}/>

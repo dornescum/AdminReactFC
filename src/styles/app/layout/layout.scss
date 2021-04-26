@@ -102,8 +102,12 @@ html, body, #app {
         padding: $content-padding;
         z-index: $z-index-main-section - 2;
         font-size: .875rem;
+        background-color: $footer-color;
         p {
             margin: 0;
+        }
+        span {
+            color: $secondary;
         }
     }
 }
