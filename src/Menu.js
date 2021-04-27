@@ -441,10 +441,15 @@ const Menu = [
                 path: '/date-fiscale',
                 translate: 'sidebar.nav.form.Date Fiscale'
             },
-  {
+            {
                 name: 'Despre Firma',
                 path: '/despre-firma',
                 translate: 'sidebar.nav.form.Despre Firma'
+            },
+            {
+                name: 'Galerie Foto',
+                path: '/galerie-foto',
+                translate: 'sidebar.nav.form.Galerie Foto'
             },
 
         ]
