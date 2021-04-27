@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import ContentWrapper from '../Layout/ContentWrapper';
 import {Row, Col, Input, Card, CardHeader, CardBody, CardFooter, CustomInput, FormGroup} from 'reactstrap';
 import {FontAwesome} from '@fortawesome/fontawesome-free';
@@ -21,7 +21,7 @@ import styles from './date-generale.scss';
  * 6- Similarly, onSubmit event does a bulk validation on all form elements
  */
 
-const stopDefault =(e)=>{
+const stopDefault = (e) => {
     e.preventDefault();
 }
 
@@ -56,19 +56,19 @@ class DateGenerale extends Component {
             maxval: '',
             list: ''
         },
-        date:{
-            name:"",
-            cod:"",
-            description:"",
-            adress:"",
-            telefon:"",
-            fax:"",
-            website:"",
-            email:"",
-            category:"",
-            series:"",
-            logo:"",
-            img:""
+        date: {
+            name: "",
+            cod: "",
+            description: "",
+            adress: "",
+            telefon: "",
+            fax: "",
+            website: "",
+            email: "",
+            category: "",
+            series: "",
+            logo: "",
+            img: ""
         }
     }
 
@@ -101,7 +101,7 @@ class DateGenerale extends Component {
         const form = e.target;
         const inputs = [...form.elements].filter(i => ['INPUT', 'SELECT'].includes(i.nodeName))
 
-        const { errors, hasError } = FormValidator.bulkValidate(inputs)
+        const {errors, hasError} = FormValidator.bulkValidate(inputs)
 
         this.setState({
             [form.name]: {
@@ -117,33 +117,35 @@ class DateGenerale extends Component {
 
     /* Simplify error check */
     hasError = (formName, inputName, method) => {
-        return  this.state[formName] &&
+        return this.state[formName] &&
             this.state[formName].errors &&
             this.state[formName].errors[inputName] &&
             this.state[formName].errors[inputName][method]
     }
 
 
-
     render() {
         return (
             <ContentWrapper>
                 <div className="content-heading">
-                    <div >Date generale
-                        <p className='font-para-title'>Modificati datele firmei / PFA, astfel incat potentialii clienti sa-si formeze o imagine cat mai corecta despre dumneavoastra.</p>
-                        <p className='font-para-title'>Luati in considerare faptul ca majoritatea campurilor vor fi incluse ca si criterii de selectie in formularul <a href="#">Cauta firma</a> . Deci, este important ca gradul de completare al informatiilor sa fie cat mai ridicat.
+                    <div>Date generale
+                        <p className='font-para-title'>Modificati datele firmei / PFA, astfel incat potentialii clienti
+                            sa-si formeze o imagine cat mai corecta despre dumneavoastra.</p>
+                        <p className='font-para-title'>Luati in considerare faptul ca majoritatea campurilor vor fi
+                            incluse ca si criterii de selectie in formularul <a href="#">Cauta firma</a> . Deci, este
+                            important ca gradul de completare al informatiilor sa fie cat mai ridicat.
                         </p>
                     </div>
                 </div>
-                { /* START row */ }
+                { /* START row */}
                 <Row>
-                    <Col lg={ 6 }>
+                    <Col lg={6}>
                         <form onSubmit={this.onSubmit} name="formRegister" action="">
-                            { /* START card */ }
+                            { /* START card */}
                             <Card className="card-default">
                                 <CardHeader>
                                     {/*<div className="card-title">Tip autorizat *</div>*/}
-                                    <fieldset style={{padding:"0", marginBottom:"0"}}>
+                                    <fieldset style={{padding: "0", marginBottom: "0"}}>
                                         <FormGroup row>
                                             <label className="col-md-12 col-form-label">Tip autorizat *</label>
                                             <div className="col-md-12">
@@ -163,12 +165,14 @@ class DateGenerale extends Component {
                                         <label className="col-form-label">Nume *</label>
                                         <Input type="email"
                                                name="email"
-                                               invalid={this.hasError('date','name','required')||this.hasError('date','name','required')}
+                                               invalid={this.hasError('date', 'name', 'required') || this.hasError('date', 'name', 'required')}
                                                onChange={this.validateOnChange}
                                                data-validate='["required", "name"]'
                                                value={this.state.date.name}/>
-                                        { this.hasError('date','name','required') && <span className="invalid-feedback">Field is required</span> }
-                                        { this.hasError('date','name','email') && <span className="invalid-feedback">Field must be valid email</span> }
+                                        {this.hasError('date', 'name', 'required') &&
+                                        <span className="invalid-feedback">Field is required</span>}
+                                        {this.hasError('date', 'name', 'email') &&
+                                        <span className="invalid-feedback">Field must be valid email</span>}
 
 
                                     </div>
@@ -178,7 +182,7 @@ class DateGenerale extends Component {
                                         <Input type="text"
                                                id="id-password"
                                                name="password"
-                                               invalid={this.hasError('formRegister','password','required')}
+                                               invalid={this.hasError('formRegister', 'password', 'required')}
                                                onChange={this.validateOnChange}
                                                data-validate='["required"]'
                                                value={this.state.formRegister.password}
@@ -188,18 +192,22 @@ class DateGenerale extends Component {
 
                                     {/*==============*/}
                                     <div className="form-group row">
-                                        <label className="col-md-3 col-4 col-form-label " htmlFor="inputContact6">Descriere *</label>
+                                        <label className="col-md-3 col-4 col-form-label " htmlFor="inputContact6">Descriere
+                                            *</label>
                                         <div className="col-xl-12 col-md-12 col-12">
-                                            <textarea className="form-control" id="inputContact6" row="3" defaultValue="Some nice Street, 1234"></textarea>
+                                            <textarea className="form-control" id="inputContact6" row="3"
+                                                      defaultValue="Some nice Street, 1234"></textarea>
                                         </div>
                                     </div>
                                     {/*================*/}
 
                                     {/*==============*/}
                                     <div className="form-group row">
-                                        <label className="col-md-3 col-4 col-form-label " htmlFor="inputContact6">Adresa *</label>
+                                        <label className="col-md-3 col-4 col-form-label " htmlFor="inputContact6">Adresa
+                                            *</label>
                                         <div className="col-xl-12 col-md-12 col-12">
-                                            <textarea className="form-control" id="inputContact6" row="3" defaultValue="Some nice Street, 1234"></textarea>
+                                            <textarea className="form-control" id="inputContact6" row="3"
+                                                      defaultValue="Some nice Street, 1234"></textarea>
                                         </div>
                                     </div>
                                     {/*================*/}
@@ -208,12 +216,14 @@ class DateGenerale extends Component {
                                         <label className="col-form-label">Telefon</label>
                                         <Input type="email"
                                                name="email"
-                                               invalid={this.hasError('formLogin','email','required')||this.hasError('formLogin','email','email')}
+                                               invalid={this.hasError('formLogin', 'email', 'required') || this.hasError('formLogin', 'email', 'email')}
                                                onChange={this.validateOnChange}
                                                data-validate='["required", "email"]'
                                                value={this.state.formLogin.email}/>
-                                        { this.hasError('formLogin','email','required') && <span className="invalid-feedback">Field is required</span> }
-                                        { this.hasError('formLogin','email','email') && <span className="invalid-feedback">Field must be valid email</span> }
+                                        {this.hasError('formLogin', 'email', 'required') &&
+                                        <span className="invalid-feedback">Field is required</span>}
+                                        {this.hasError('formLogin', 'email', 'email') &&
+                                        <span className="invalid-feedback">Field must be valid email</span>}
                                     </div>
                                     {/*<div className="required">* Required fields</div>*/}
 
@@ -224,7 +234,7 @@ class DateGenerale extends Component {
                                         <Input type="text"
                                                id="id-password"
                                                name="password"
-                                               invalid={this.hasError('formLogin','password','required')}
+                                               invalid={this.hasError('formLogin', 'password', 'required')}
                                                onChange={this.validateOnChange}
                                                data-validate='["required"]'
                                                value={this.state.formLogin.password}
@@ -237,7 +247,7 @@ class DateGenerale extends Component {
                                         <Input type="text"
                                                id="id-password"
                                                name="password"
-                                               invalid={this.hasError('formLogin','password','required')}
+                                               invalid={this.hasError('formLogin', 'password', 'required')}
                                                onChange={this.validateOnChange}
                                                data-validate='["required"]'
                                                value={this.state.formLogin.password}
@@ -250,7 +260,7 @@ class DateGenerale extends Component {
                                         <Input type="text"
                                                id="id-password"
                                                name="password"
-                                               invalid={this.hasError('formLogin','password','required')}
+                                               invalid={this.hasError('formLogin', 'password', 'required')}
                                                onChange={this.validateOnChange}
                                                data-validate='["required"]'
                                                value={this.state.formLogin.password}
@@ -263,7 +273,7 @@ class DateGenerale extends Component {
                                         <Input type="text"
                                                id="id-password"
                                                name="password"
-                                               invalid={this.hasError('formLogin','password','required')}
+                                               invalid={this.hasError('formLogin', 'password', 'required')}
                                                onChange={this.validateOnChange}
                                                data-validate='["required"]'
                                                value={this.state.formLogin.password}
@@ -272,61 +282,41 @@ class DateGenerale extends Component {
                                     </div>
 
 
-
                                 </CardBody>
 
                             </Card>
-                            { /* END card */ }
+                            { /* END card */}
                         </form>
                     </Col>
-                    <Col lg={ 6 }>
+                    <Col lg={6}>
                         <form onSubmit={this.onSubmit} method="post" name="formLogin">
-                            { /* START card */ }
+                            { /* START card */}
                             <Card className="card-default">
                                 {/*<CardHeader>*/}
                                 {/*    <div  className={`card-title`}>Firma</div>*/}
                                 {/*</CardHeader>*/}
                                 <CardBody>
                                     {/*logo*/}
-                                    <div className="card" >
-                                        <CardHeader>
-                                            <div  className={`card-title`}>Logo listare 190px / 70px</div>
-                                        </CardHeader>
-                                        <img className="img-fluid ie-fix-flex" src="img/bg3.jpg" alt="Demo" style={{height:"20vh"}}/>
-                                        <div className="card-body">
-                                            <div className="row text-center">
-                                                <div className="col-3 col-sm-4">
-                                                    <div className="ml-auto">
-                                                        <button type="submit" className="btn btn-primary"               onClick={stopDefault}>Upload</button>
-                                                    </div>
-                                                </div>
-                                                <div className="col-3 col-sm-4">
-                                                    <div className="ml-auto">
-                                                        <button type="submit" className="btn btn-danger"               onClick={stopDefault}>Sterge</button>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-{/*imagini*/}
                                     <div className="card">
                                         <CardHeader>
-                                            <div  className={`card-title`}>Logo prezentare 250px / 250px</div>
+                                            <div className={`card-title`}>Logo listare 190px / 70px</div>
                                         </CardHeader>
-                                        <img className="img-fluid ie-fix-flex" src="img/bg1.jpg" alt="Demo" />
+                                        <img className="img-fluid ie-fix-flex" src="img/bg3.jpg" alt="Demo"
+                                             style={{height: "20vh"}}/>
                                         <div className="card-body">
                                             <div className="row text-center">
-                                                <div className="col-6">
+                                                <div className="col-3 col-sm-4">
                                                     <div className="ml-auto">
-                                                        <button type="submit" className="btn btn-primary"               onClick={stopDefault}>Upload</button>
+                                                        <button type="submit" className="btn btn-primary"
+                                                                onClick={stopDefault}>Upload
+                                                        </button>
                                                     </div>
                                                 </div>
-                                                <div className="col-6">
+                                                <div className="col-3 col-sm-4">
                                                     <div className="ml-auto">
-                                                        <button type="submit" className="btn btn-danger"  onClick={stopDefault}>
-                                                            Sterge</button>
+                                                        <button type="submit" className="btn btn-danger"
+                                                                onClick={stopDefault}>Sterge
+                                                        </button>
                                                     </div>
                                                 </div>
 
@@ -334,6 +324,33 @@ class DateGenerale extends Component {
                                         </div>
                                     </div>
 
+                                    {/*imagini*/}
+                                    <div className="card">
+                                        <CardHeader>
+                                            <div className={`card-title`}>Logo prezentare 250px / 250px</div>
+                                        </CardHeader>
+                                        <img className="img-fluid ie-fix-flex" src="img/bg1.jpg" alt="Demo"/>
+                                        <div className="card-body">
+                                            <div className="row text-center">
+                                                <div className="col-6">
+                                                    <div className="ml-auto">
+                                                        <button type="submit" className="btn btn-primary"
+                                                                onClick={stopDefault}>Upload
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div className="col-6">
+                                                    <div className="ml-auto">
+                                                        <button type="submit" className="btn btn-danger"
+                                                                onClick={stopDefault}>
+                                                            Sterge
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
 
 
                                     {/*<div className="required">* Required fields</div>*/}
@@ -344,14 +361,14 @@ class DateGenerale extends Component {
 
                                 <CardFooter>
 
-                                    <div className="required" style={{paddingLeft:"1rem"}}>* campuri obligatorii</div>
+                                    <div className="required" style={{paddingLeft: "1rem"}}>* campuri obligatorii</div>
 
                                     <div className="d-flex align-items-center">
 
                                         <CustomInput type="checkbox" id="terms"
                                                      name="terms"
                                                      label="Sunt de acord"
-                                                     invalid={this.hasError('formRegister','terms','required')}
+                                                     invalid={this.hasError('formRegister', 'terms', 'required')}
                                                      onChange={this.validateOnChange}
                                                      data-validate='["required"]'
                                                      checked={this.state.formRegister.terms}>
@@ -359,13 +376,15 @@ class DateGenerale extends Component {
                                         </CustomInput>
 
                                         <div className="ml-auto">
-                                            <button type="submit" className="btn btn-primary"               onClick={stopDefault}>Salvare</button>
+                                            <button type="submit" className="btn btn-primary"
+                                                    onClick={stopDefault}>Salvare
+                                            </button>
                                         </div>
                                     </div>
                                 </CardFooter>
 
                             </Card>
-                            { /* END card */ }
+                            { /* END card */}
                         </form>
                     </Col>
                 </Row>

@@ -151,7 +151,15 @@ const Menu = [
              {
                 name: 'Date generale',
                 path: '/date-generale',
-            }
+            },
+            {
+                name: 'Date generale1',
+                path: '/date-gen',
+            },
+ {
+                name: 'Date Fiscale',
+                path: '/date-fiscale',
+            },
 
         ]
     },
