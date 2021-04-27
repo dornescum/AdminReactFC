@@ -27,7 +27,7 @@ class DateFiscale extends Component {
     state = {
         dropdownOpen: false,
         splitButtonOpen: false,
-
+        // errors: {}
     }
 
     toggleDropDown = () => {
@@ -42,26 +42,47 @@ class DateFiscale extends Component {
         });
     }
 
+    // formValidation = () => {
+    //     const {username} = this.state;
+    //     let isValid = true;
+    //     const errors = {};
+    //     if (username.trim().length < 6) {
+    //         errors.userNameLength = 'too short'
+    //         isValid = false;
+    //     }
+    //     if (!username.includes('$ ')) {
+    //         errors.userName$ = " must have $"
+    //         isValid = false;
+    //     }
+    //     this.setState({errors})
+    //     return isValid;
+    // }
+
     onSubmit = e => {
-        console.log('Form submitted..');
         e.preventDefault();
+        console.log('Form submitted..');
+        // if (e.target.value === " "){
+        //     console.log('error')
+        // } else {
+        //     console.log('Form submitted..');
+        // }
+        // console.log(e.target.value)
+        // const isValid = this.formValidation();
     }
     // ==================
-    /* Simplify error check */
-    hasError = (formName, inputName, method) => {
-        return this.state[formName] &&
-            this.state[formName].errors &&
-            this.state[formName].errors[inputName] &&
-            this.state[formName].errors[inputName][method]
-    }
-
-    // ==================
-
-
-// =================
+    // minReq = (e) => {
+    //     if (e.length < 3) {
+    //         console.log('error')
+    //     }
+    //     console.log(e.target.value)
+    //
+    // }
+    // onChange = (e) => {
+    //     this.setState({[e.target.name]: e.target.value})
+    // }
 
     render() {
-
+        // const {username, errors} = this.state;
         return (
             <ContentWrapper>
                 <div className="content-heading">
@@ -81,7 +102,8 @@ class DateFiscale extends Component {
 
                                     <FormGroup>
                                         <label>Nume *</label>
-                                        <Input type="text" placeholder="nume"/>
+                                        <Input type="text" name='username' placeholder="nume"
+                                               />
                                     </FormGroup>
                                     <FormGroup>
                                         <label>CUI *</label>
@@ -120,12 +142,11 @@ class DateFiscale extends Component {
                                         </div>
                                     </div>
                                     {/*================*/}
-
-
-
+                                    {/*<button className="btn btn-sm btn-secondary" type="submit">Submit</button>*/}
 
                                 </form>
                             </CardBody>
+
                         </Card>
                         {/* END card */}
                     </div>
@@ -142,7 +163,7 @@ class DateFiscale extends Component {
                                     <label>Fax</label>
                                     <Input type="number" placeholder="fax"/>
                                 </FormGroup>
-  <FormGroup>
+                                <FormGroup>
                                     <label>Email</label>
                                     <Input type="email" placeholder="@email"/>
                                 </FormGroup>
@@ -150,7 +171,7 @@ class DateFiscale extends Component {
                                     <label>Banca</label>
                                     <Input type="text" placeholder="banca"/>
                                 </FormGroup>
-                                  <FormGroup>
+                                <FormGroup>
                                     <label>IBAN</label>
                                     <Input type="text" placeholder="iban"/>
                                 </FormGroup>

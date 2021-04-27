@@ -422,7 +422,33 @@ const Menu = [
         name: 'Forum',
         icon: 'icon-speech',
         path: '/forum'
-    }
+    },
+    {
+        heading: 'Datele Firmei /PFA',
+        translate: 'sidebar.heading.Datele Firmei'
+    },
+    {
+        name: 'Datele firmei /PFA',
+        icon: 'icon-note',
+        translate: 'sidebar.nav.form.Datele Firmei',
+        submenu: [{
+            name: 'Date generale',
+            path: '/date-gen',
+            translate: 'sidebar.nav.form.Date Generale'
+        },
+            {
+                name: 'Date Fiscale',
+                path: '/date-fiscale',
+                translate: 'sidebar.nav.form.Date Fiscale'
+            },
+  {
+                name: 'Despre Firma',
+                path: '/despre-firma',
+                translate: 'sidebar.nav.form.Despre Firma'
+            },
+
+        ]
+    },
 ];
 
 export default Menu;
