@@ -7,9 +7,11 @@
   .lucrare{
     background-color: $secondary ;
     padding: .2rem;
+    width: 100%;
     &:hover{
       background-color:lighten($light-grey1, 7%);
       transition: $transition;
+      border-radius: $radius;
     }
   }
   .btn-lucrari{
