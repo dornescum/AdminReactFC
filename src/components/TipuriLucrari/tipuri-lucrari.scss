@@ -8,7 +8,7 @@
     background-color: $secondary ;
     padding: .2rem;
     &:hover{
-      background-color: $light-grey1;
+      background-color:lighten($light-grey1, 7%);
       transition: $transition;
     }
   }
