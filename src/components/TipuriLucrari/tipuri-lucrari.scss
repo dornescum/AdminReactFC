@@ -1,0 +1,19 @@
+@import "src/styles/app/common/variables";
+.formular-lucrari{
+  padding: 2rem;
+  .lucrari-individuale{
+    padding: .5rem;
+  }
+  .lucrare{
+    background-color: $secondary ;
+    padding: .2rem;
+    &:hover{
+      background-color: $light-grey1;
+      transition: $transition;
+    }
+  }
+  .btn-lucrari{
+    padding: .5rem;
+  }
+}
+

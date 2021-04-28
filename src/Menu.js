@@ -451,6 +451,11 @@ const Menu = [
                 path: '/galerie-foto',
                 translate: 'sidebar.nav.form.Galerie Foto'
             },
+ {
+                name: 'Tipuri Lucrari',
+                path: '/tipuri-lucrari',
+                translate: 'sidebar.nav.form.Tipuri Lucrari'
+            },
 
         ]
     },

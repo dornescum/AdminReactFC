@@ -104,6 +104,7 @@ const DateGen = lazy(() => import('./components/DateGen/DateGen'));
 const DateFiscale = lazy(() => import('./components/DateFiscale/DateFiscale'));
 const DespreFirma = lazy(() => import('./components/DespreFirma/DespreFirma'));
 const GalerieFoto = lazy(() => import('./components/GaleriaFoto/GalerieFoto'));
+const TipuriLucrari = lazy(() => import('./components/TipuriLucrari/TipuriLucrari'));
 
 
 
@@ -199,6 +200,7 @@ const Routes = ({ location }) => {
                                 <Route path="/date-fiscale" component={waitFor(DateFiscale)}/>
                                 <Route path="/despre-firma" component={waitFor(DespreFirma)}/>
                                 <Route path="/galerie-foto" component={waitFor(GalerieFoto)}/>
+                                <Route path="/tipuri-lucrari" component={waitFor(TipuriLucrari)}/>
 
                                 {/*Charts*/}
                                 <Route path="/chart-flot" component={waitFor(ChartFlot)}/>
