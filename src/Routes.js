@@ -8,7 +8,7 @@ import PageLoader from './components/Common/PageLoader';
 import Base from './components/Layout/Base';
 import BasePage from './components/Layout/BasePage';
 import DateGenerale from "./components/DateGenerale/DateGenerale";
-// import BaseHorizontal from './components/Layout/BaseHorizontal';
+import ContactMesaje from './components/ContactMesaje/ContactMesaje';
 
 /* Used to render a lazy component with react-router */
 const waitFor = Tag => props => <Tag {...props}/>;
@@ -105,6 +105,7 @@ const DateFiscale = lazy(() => import('./components/DateFiscale/DateFiscale'));
 const DespreFirma = lazy(() => import('./components/DespreFirma/DespreFirma'));
 const GalerieFoto = lazy(() => import('./components/GaleriaFoto/GalerieFoto'));
 const TipuriLucrari = lazy(() => import('./components/TipuriLucrari/TipuriLucrari'));
+// const ContactMesaje = lazy(() => import('./components/ContactMesaje/ContactMesaje'));
 
 
 
@@ -201,6 +202,9 @@ const Routes = ({ location }) => {
                                 <Route path="/despre-firma" component={waitFor(DespreFirma)}/>
                                 <Route path="/galerie-foto" component={waitFor(GalerieFoto)}/>
                                 <Route path="/tipuri-lucrari" component={waitFor(TipuriLucrari)}/>
+
+                                {/*Contact*/}
+                                <Route path="/contact-mesaje" component={waitFor(ContactMesaje)}/>
 
                                 {/*Charts*/}
                                 <Route path="/chart-flot" component={waitFor(ChartFlot)}/>

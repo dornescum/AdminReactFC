@@ -1,0 +1,9 @@
+.mesaje-subtitle{ }
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.pagination{
+  @include flex-center;
+}
