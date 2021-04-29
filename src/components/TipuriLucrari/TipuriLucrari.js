@@ -50,7 +50,7 @@ class TipuriLucrari extends Component {
         return (
             <ContentWrapper>
                 <div className="content-heading">
-                    <div>Galerie Foto</div>
+                    <div>Tipuri lucrari</div>
                 </div>
 
                 <Card>

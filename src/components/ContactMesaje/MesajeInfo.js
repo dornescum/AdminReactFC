@@ -20,7 +20,6 @@ const MesajeInfo = () => {
                 <li>
                     Noi validam mesajul (sa nu fie SPAM, sa nu contina injurii etc.), apoi il trimitem mai departe catre
                     dvs.
-
                 </li>
                 <li>
                     Primiti un email cu toate detaliile si veti avea posibilitatea sa raspundeti direct clientului, prin

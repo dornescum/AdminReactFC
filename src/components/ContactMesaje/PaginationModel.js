@@ -7,10 +7,10 @@ const PaginationModel =()=>{
         <Col lg={12}>
             <Pagination className='pagination-center'>
                 <PaginationItem>
-                    <PaginationLink previous href="#" />
+                    <PaginationLink previous href="/despre-firma" />
                 </PaginationItem>
                 <PaginationItem>
-                    <PaginationLink href="#">
+                    <PaginationLink href="/date-fiscale">
                         1
                     </PaginationLink>
                 </PaginationItem>
