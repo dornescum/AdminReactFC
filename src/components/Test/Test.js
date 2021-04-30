@@ -27,8 +27,9 @@ const Test = () => {
 
     ]
     const changeColor =()=>{
-        const color = {backgroundColor: 'red', fontSize: '44'}
-        return color
+        // const color = {backgroundColor: 'red', fontSize: '44'}
+        // return color
+        console.log('click')
     }
 
     return <ContentWrapper>

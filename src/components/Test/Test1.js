@@ -7,6 +7,10 @@ const Test1 =(props)=>{
         backgroundColor: "$primary",
         padding: ".5rem",
     }
+const change =()=>{
+    // console.log('clicked')
+}
+
 
     return <div className="col-md-6" style={style} key={props.id}>
         <div className="checkbox c-checkbox">
