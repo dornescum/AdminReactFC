@@ -28,6 +28,7 @@ class DateFiscale extends Component {
         dropdownOpen: false,
         splitButtonOpen: false,
         // errors: {}
+
     }
 
     toggleDropDown = () => {
@@ -60,8 +61,10 @@ class DateFiscale extends Component {
 
     onSubmit = e => {
         e.preventDefault();
-        console.log('Form submitted..');
-        // if (e.target.value === " "){
+        // console.log(this.serialize);
+        // console.log(e.target[0].value)
+        // this.setState({email: e.target.value});
+        // if (e.target.value === ""){
         //     console.log('error')
         // } else {
         //     console.log('Form submitted..');
@@ -183,7 +186,7 @@ class DateFiscale extends Component {
                                         <Input type="checkbox" defaultChecked=""/>
                                         <span className="fa fa-times"></span>Check me out</label>
                                 </div>
-                                <button className="btn btn-sm btn-secondary" type="submit">Submit</button>
+                                <button className="btn btn-sm btn-secondary" type="submit" onClick={this.onSubmit}>Submit</button>
                             </CardFooter>
                         </Card>
                         {/* END card */}

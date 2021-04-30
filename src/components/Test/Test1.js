@@ -10,8 +10,6 @@ const Test1 =(props)=>{
 const change =()=>{
     // console.log('clicked')
 }
-
-
     return <div className="col-md-6" style={style} key={props.id}>
         <div className="checkbox c-checkbox">
             <label className='lucrare' onClick={props.click}>

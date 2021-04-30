@@ -1,22 +1,18 @@
 import {Card, CardBody, Col} from "reactstrap";
 // import ContentWrapper from "../Layout/ContentWrapper";
 
-const MesajeClienti = (props)=>{
-    return  <Card>
-        <CardBody>
-            <fieldset>
-                <div className="form-group row" >
-                    <label className="col-md-2 col-form-label">{props.id} {props.name} {props.date}</label>
-                    <Col md={ 10 }>
-                        <Card body>
-                            <textarea rows="5" className="form-control note-editor" defaultValue={props.body}></textarea>
-                        </Card>
+const MesajeClienti = (props) => {
+    return   <div className="form-group row" >
+        <label className="col-md-2 col-form-label">{props.id} {props.name} {props.date}</label>
+                 <Col md={12}>
+            <Card body>
+                <textarea rows="5" className="form-control" readOnly defaultValue={props.message}></textarea>
+            </Card>
 
-                    </Col>
-                </div>
-            </fieldset>
-        </CardBody>
-    </Card>
+                </Col>
+         </div>
+
+
 }
 
 export default MesajeClienti;

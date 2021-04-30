@@ -464,20 +464,16 @@ const Menu = [
         translate: 'sidebar.heading.Datele Firmei'
     },
     {
-        name: 'Contact',
+        name: 'Contact Mesaje',
+        path: '/contact-mesaje',
         icon: 'icon-note',
-        translate: 'sidebar.nav.form.Contact',
-        submenu: [{
-            name: 'Contact Mesaje',
-            path: '/contact-mesaje',
-            translate: 'sidebar.nav.form.Contact Mesaje'
-        },
-            {
-                name: 'Date contact',
-                path: '/date-contact',
-                translate: 'sidebar.nav.form.Date Contact'
-            },
-        ]
+        translate: 'sidebar.nav.form.Contact Mesaje',
+    },
+    {
+        name: 'Date contact',
+        path: '/date-contact',
+        icon: 'icon-note',
+        translate: 'sidebar.nav.form.Date Contact'
     },
 ];
 

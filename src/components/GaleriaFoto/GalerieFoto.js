@@ -52,10 +52,9 @@ class GalerieFoto extends Component {
                 <div className="content-heading">
                     <div>Galerie Foto</div>
                 </div>
-                <Col xl="12">
+                <Col xl="12" >
                     <CardColumns>
-
-                        <Card>
+                        <Card lg='3'>
                             <a href="">
                                 <img className="img-fluid" src="img/bg5.jpg" alt="Demo"/>
                             </a>
@@ -66,7 +65,7 @@ class GalerieFoto extends Component {
                                 </div>
                             </CardBody>
                         </Card>
-                        <Card>
+                        <Card lg='3'>
                             <a href="">
                                 <img className="img-fluid" src="img/bg5.jpg" alt="Demo"/>
                             </a>
@@ -77,7 +76,7 @@ class GalerieFoto extends Component {
                                 </div>
                             </CardBody>
                         </Card>
-                        <Card>
+                        <Card lg='3'>
                             <a href="">
                                 <img className="img-fluid" src="img/bg5.jpg" alt="Demo"/>
                             </a>
@@ -88,7 +87,7 @@ class GalerieFoto extends Component {
                                 </div>
                             </CardBody>
                         </Card>
-                        <Card>
+                        <Card lg='3'>
                             <a href="">
                                 <img className="img-fluid" src="img/bg5.jpg" alt="Demo"/>
                             </a>
