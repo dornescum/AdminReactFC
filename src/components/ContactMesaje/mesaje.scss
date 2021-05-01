@@ -1,9 +1,19 @@
-.mesaje-subtitle{ }
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+@import "src/styles/app/common/mixins";
+
+.mesaje-subtitle{
+  .flex-sb{
+    @include flex-sb;
+    width: 100%;
+    padding: 0 2rem;
+    .info-message{
+      display: flex;
+    }
+    .bold{
+      font-weight: bold;
+    }
+  }
 }
+
 .pagination{
   @include flex-center;
 }

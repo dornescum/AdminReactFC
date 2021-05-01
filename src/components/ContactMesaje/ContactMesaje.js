@@ -3,6 +3,8 @@ import {CardBody, Card, Col, CardHeader, CardFooter, Row, PaginationItem, Pagina
 import MesajeInfo from "./MesajeInfo";
 import MesajeClienti from "./MesajeClienti";
 import PaginationModel from "./PaginationModel";
+import Data from '../../fake_data.json';
+import React, {useState} from "react";
 
 import './mesaje.scss'
 
@@ -28,6 +30,7 @@ const ContactMesaje = () => {
         },
 
     ]
+    const [users, setUsers] =useState(Data.slice(0,20))
 
     return <ContentWrapper>
         <div className="content-heading">
@@ -39,16 +42,18 @@ const ContactMesaje = () => {
                 <fieldset>
 
 
-        {mesajeClienti.map((item) => {
-            return <MesajeClienti name={item.name} date={item.date} message={item.message} key={item.id} id={item.id}/>
-        })}
-
+        {/*{mesajeClienti.map((item) => {*/}
+        {/*    return <MesajeClienti name={item.name} date={item.date} message={item.message} key={item.id} id={item.id}/>*/}
+        {/*})}*/}
+                    {users.map((item)=>{
+                        return <MesajeClienti
+                            first_name={item.first_name} last_name={item.last_name}
+                            date={item.date} message={item.text} key={item.id} id={item.id}/>
+                    })}
                 </fieldset>
             </CardBody>
         </Card>
         <PaginationModel/>
-
-
     </ContentWrapper>
 }
 

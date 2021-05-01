@@ -52,9 +52,22 @@ class GalerieFoto extends Component {
                 <div className="content-heading">
                     <div>Galerie Foto</div>
                 </div>
-                <Col xl="12" >
+                <Col xl="12">
                     <CardColumns>
-                        <Card lg='3'>
+                            <Card>
+                                <a href="">
+                                    <img className="img-fluid" src="img/bg5.jpg" alt="Demo"/>
+                                </a>
+                                <CardBody>
+                                    <hr className="d-print-none"/>
+                                    <div className="clearfix">
+                                        <button className="btn btn-primary float-right" type="button">Delete</button>
+                                    </div>
+                                </CardBody>
+                            </Card>
+
+
+                        <Card>
                             <a href="">
                                 <img className="img-fluid" src="img/bg5.jpg" alt="Demo"/>
                             </a>
@@ -65,7 +78,7 @@ class GalerieFoto extends Component {
                                 </div>
                             </CardBody>
                         </Card>
-                        <Card lg='3'>
+                        <Card>
                             <a href="">
                                 <img className="img-fluid" src="img/bg5.jpg" alt="Demo"/>
                             </a>
@@ -76,18 +89,7 @@ class GalerieFoto extends Component {
                                 </div>
                             </CardBody>
                         </Card>
-                        <Card lg='3'>
-                            <a href="">
-                                <img className="img-fluid" src="img/bg5.jpg" alt="Demo"/>
-                            </a>
-                            <CardBody>
-                                <hr className="d-print-none"/>
-                                <div className="clearfix">
-                                    <button className="btn btn-primary float-right" type="button">Delete</button>
-                                </div>
-                            </CardBody>
-                        </Card>
-                        <Card lg='3'>
+                        <Card>
                             <a href="">
                                 <img className="img-fluid" src="img/bg5.jpg" alt="Demo"/>
                             </a>
