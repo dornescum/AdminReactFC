@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {CardFooter, Col, FormGroup, Input, Row} from "reactstrap";
-import '../TipuriLucrari/tipuri-lucrari.scss'
+import '../TipuriLucrari/tipuri-lucrari.scss';
+
 
 const Test1 = (props) => {
     const [enteredName, setEnteredName] = useState('');
@@ -9,28 +10,46 @@ const Test1 = (props) => {
     const [enteredCounty, setEnteredCounty] = useState('');
     const [enteredTown, setEnteredTown] = useState('');
     const [enteredAdress, setEnteredAdress] = useState('');
+    const [enteredPhone, setEnteredPhone] = useState('');
+    const [enteredFax, setEnteredFax] = useState('');
+    const [enteredBank, setEnteredBank] = useState('');
+    const [enteredEmail, setEnteredEmail] = useState('');
+    const [enteredIban, setEnteredIban] = useState('');
 
-    const nameHandler = (e) =>{
+
+    const nameHandler = (e) => {
         setEnteredName(e.target.value);
     }
-      const CUIHandler = (e) =>{
+    const CUIHandler = (e) => {
         setEnteredCUI(e.target.value);
     }
-      const nrHandler = (e) =>{
+    const nrHandler = (e) => {
         setEnteredNr(e.target.value);
     }
-      const countyHandler = (e) =>{
+    const countyHandler = (e) => {
         setEnteredCounty(e.target.value);
     }
-      const townHandler = (e) =>{
+    const townHandler = (e) => {
         setEnteredTown(e.target.value);
     }
-      const adressHandler = (e) =>{
+    const adressHandler = (e) => {
         setEnteredAdress(e.target.value);
     }
-
-
-    const values =[]
+    const phoneHandler = (e) => {
+        setEnteredPhone(e.target.value);
+    }
+    const faxHandler = (e) => {
+        setEnteredFax(e.target.value);
+    }
+    const emailHandler = (e) => {
+        setEnteredEmail(e.target.value);
+    }
+    const bankHandler = (e) => {
+        setEnteredBank(e.target.value);
+    }
+    const ibanHandler = (e) => {
+        setEnteredIban(e.target.value);
+    }
 
     const inputValue = e => {
         e.preventDefault();
@@ -40,7 +59,12 @@ const Test1 = (props) => {
             nr: enteredNr,
             county: enteredCounty,
             town: enteredTown,
-            adress: enteredAdress
+            adress: enteredAdress,
+            phone: enteredPhone,
+            email: enteredEmail,
+            fax: enteredFax,
+            bank: enteredBank,
+            iban: enteredIban
         }
 
         setEnteredName('');
@@ -49,12 +73,16 @@ const Test1 = (props) => {
         setEnteredCounty('');
         setEnteredTown('');
         setEnteredAdress('');
+        setEnteredPhone('');
+        setEnteredFax('');
+        setEnteredEmail('');
+        setEnteredBank('');
+        setEnteredIban('');
         console.log(data)
     }
 
 
-
-    return <form action="" onSubmit={inputValue} >
+    return <form action="" onSubmit={inputValue}>
         <Row>
             <Col lg='6'>
                 <FormGroup>
@@ -65,11 +93,11 @@ const Test1 = (props) => {
 
                 <FormGroup>
                     <label>CUI *</label>
-                    <Input type="text" placeholder="cui" value={enteredCUI}  onChange={CUIHandler}/>
+                    <Input type="text" placeholder="cui" value={enteredCUI} onChange={CUIHandler}/>
                 </FormGroup>
                 <FormGroup>
                     <label>Nr Registru Comert *</label>
-                    <Input type="number" placeholder="nr" value={enteredNr} onChange={nrHandler} />
+                    <Input type="number" placeholder="nr" value={enteredNr} onChange={nrHandler}/>
                 </FormGroup>
 
                 <fieldset style={{padding: "0", marginBottom: "10"}}>
@@ -79,7 +107,7 @@ const Test1 = (props) => {
                             <select defaultValue="" className="custom-select custom-select-sm" onChange={countyHandler}
 
                             >
-                                <option  value={enteredCounty}>Alege judet</option>
+                                <option value={enteredCounty}>Alege judet</option>
                                 <option defaultValue="1">Alba</option>
                                 <option defaultValue="2">Arad</option>
                                 <option defaultValue="3">Arges</option>
@@ -90,7 +118,7 @@ const Test1 = (props) => {
                 {/*================*/}
                 <FormGroup>
                     <label>Localitate *</label>
-                    <Input type="text" placeholder="localitate" value={enteredTown} onChange={townHandler} />
+                    <Input type="text" placeholder="localitate" value={enteredTown} onChange={townHandler}/>
                 </FormGroup>
 
                 {/*==============*/}
@@ -100,7 +128,7 @@ const Test1 = (props) => {
                     <div className="col-xl-12 col-md-12 col-12">
                                             <textarea className="form-control" id="inputContact6" row="3"
                                                       placeholder="Some nice Street, 1234" onChange={adressHandler}
-                                            value={enteredAdress}
+                                                      value={enteredAdress}
                                             ></textarea>
                     </div>
                 </div>
@@ -108,25 +136,24 @@ const Test1 = (props) => {
             <Col lg='6'>
                 <FormGroup>
                     <label>Telefon</label>
-                    <Input type="number" placeholder="telefon"/>
+                    <Input type="number" placeholder="telefon" value={enteredPhone} onChange={phoneHandler}/>
                 </FormGroup>
                 <FormGroup>
                     <label>Fax</label>
-                    <Input type="number" placeholder="fax"/>
+                    <Input type="number" placeholder="fax" value={enteredFax} onChange={faxHandler}/>
                 </FormGroup>
                 <FormGroup>
                     <label>Email</label>
-                    <Input type="email" placeholder="@email"/>
+                    <Input type="email" placeholder="@email" value={enteredEmail} onChange={emailHandler}/>
                 </FormGroup>
                 <FormGroup>
                     <label>Banca</label>
-                    <Input type="text" placeholder="banca"/>
+                    <Input type="text" placeholder="banca"  value={enteredBank} onChange={bankHandler}/>
                 </FormGroup>
                 <FormGroup>
                     <label>IBAN</label>
-                    <Input type="text" placeholder="iban"/>
+                    <Input type="text" placeholder="iban" value={enteredIban} onChange={ibanHandler}/>
                 </FormGroup>
-
 
 
                 {/*<button className="btn btn-sm btn-secondary" type="submit">Submit</button>*/}
