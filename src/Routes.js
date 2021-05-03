@@ -106,6 +106,7 @@ const DespreFirma = lazy(() => import('./components/DespreFirma/DespreFirma'));
 const GalerieFoto = lazy(() => import('./components/GaleriaFoto/GalerieFoto'));
 const TipuriLucrari = lazy(() => import('./components/TipuriLucrari/TipuriLucrari'));
 // const ContactMesaje = lazy(() => import('./components/ContactMesaje/ContactMesaje'));
+const DateContact = lazy(() => import('./components/DateContact/DateContact'));
 
 
 
@@ -205,6 +206,8 @@ const Routes = ({ location }) => {
 
                                 {/*Contact*/}
                                 <Route path="/contact-mesaje" component={waitFor(ContactMesaje)}/>
+                                <Route path="/date-contact" component={waitFor(DateContact)}/>
+
 
                                 {/*Charts*/}
                                 <Route path="/chart-flot" component={waitFor(ChartFlot)}/>
