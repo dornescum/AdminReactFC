@@ -475,6 +475,16 @@ const Menu = [
         icon: 'icon-note',
         translate: 'sidebar.nav.form.Date Contact'
     },
+    {
+        heading: 'Abonamente',
+        translate: 'sidebar.heading.Abonamente'
+    },
+    {
+        name: 'Tipuri abonamente',
+        path: '/tipuri-abonamente',
+        icon: 'icon-note',
+        translate: 'sidebar.nav.form.Tipuri abonamente'
+    },
 ];
 
 export default Menu;
