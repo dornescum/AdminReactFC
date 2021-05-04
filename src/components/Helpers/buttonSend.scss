@@ -1,0 +1,9 @@
+@import "src/styles/app/common/mixins";
+
+.send-box{
+  @include flex-sa;
+  .send-label{
+    margin: .3rem 0;
+
+  }
+}

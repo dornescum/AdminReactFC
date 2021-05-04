@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {CardFooter, Col, FormGroup, Input, Row, Card, CardBody, CardHeader} from "reactstrap";
+import ButtonSend from "../Helpers/ButtonSend";
 
 
 const DateGenForm = (props) => {
@@ -79,7 +80,7 @@ const DateGenForm = (props) => {
             fax: enteredFax,
         }
 
-        setEnteredComapnyName('');
+        setEnteredCompanyName('');
         setEnteredCod('');
         setEnteredNr('');
         setEnteredCounty('');
@@ -107,7 +108,6 @@ const DateGenForm = (props) => {
                         </div>
                     </div>
                 </div>
-
                 <FormGroup>
                     <Row>
                         <Col lg='6'>
@@ -120,7 +120,6 @@ const DateGenForm = (props) => {
                         </Col>
                     </Row>
                 </FormGroup>
-
                 <div className="form-group row">
                     <label className="col-md-3 col-4 col-form-label " htmlFor="inputContact6">Descriere *</label>
                     <div className="col-xl-12 col-md-12 col-12">
@@ -139,7 +138,6 @@ const DateGenForm = (props) => {
                                             ></textarea>
                     </div>
                 </div>
-
                 <FormGroup>
                     <Row>
                         <Col lg='6'>
@@ -152,8 +150,6 @@ const DateGenForm = (props) => {
                        </Col>
                     </Row>
                 </FormGroup>
-
-
                  <FormGroup>
                      <Row>
                          <Col lg='6'>
@@ -165,10 +161,7 @@ const DateGenForm = (props) => {
                              <Input type="email" placeholder="@email"  value={enteredEmail} onChange={emailHandler}/>
                          </Col>
                      </Row>
-
                 </FormGroup>
-
-
                 <FormGroup>
                     <Row>
                         <Col lg='6'>
@@ -203,12 +196,13 @@ const DateGenForm = (props) => {
                 <h1 style={{color: 'red'}}>{error}</h1>
                 {/*<button className="btn btn-sm btn-secondary" type="submit">Submit</button>*/}
                 <CardFooter>
-                    <div className="checkbox c-checkbox" style={{padding: "1rem"}}>
-                        <label>
-                            <Input type="checkbox" defaultChecked=""/>
-                            <span className="fa fa-times"></span>Check me out</label>
-                    </div>
-                    <button className="btn btn-sm btn-secondary" type="submit">Submit</button>
+                    {/*<div className="checkbox c-checkbox" style={{padding: "1rem"}}>*/}
+                    {/*    <label>*/}
+                    {/*        <Input type="checkbox" defaultChecked=""/>*/}
+                    {/*        <span className="fa fa-times"></span>Check me out</label>*/}
+                    {/*</div>*/}
+                    {/*<button className="btn btn-sm btn-secondary" type="submit">Submit</button>*/}
+                    <ButtonSend />
                 </CardFooter>
             </Col>
         </Row>
