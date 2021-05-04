@@ -197,7 +197,7 @@ const Routes = ({ location }) => {
                                 <Route path="/form-upload" component={waitFor(FormUpload)}/>
                                 <Route path="/form-cropper" component={waitFor(FormCropper)}/>
                                 <Route path="/test" component={waitFor(Test)}/>
-                                <Route path="/date-generale" component={waitFor(DateGenerale)}/>
+                                {/*<Route path="/date-generale" component={waitFor(DateGenerale)}/>*/}
                                 <Route path="/date-gen" component={waitFor(DateGen)}/>
                                 <Route path="/date-fiscale" component={waitFor(DateFiscale)}/>
                                 <Route path="/despre-firma" component={waitFor(DespreFirma)}/>

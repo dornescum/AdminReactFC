@@ -3,7 +3,7 @@ import {CardFooter, Col, FormGroup, Input, Row} from "reactstrap";
 import '../TipuriLucrari/tipuri-lucrari.scss';
 
 
-const Test1 = (props) => {
+const DateFiscaleForm = (props) => {
     const [enteredName, setEnteredName] = useState('');
     const [enteredCUI, setEnteredCUI] = useState('');
     const [enteredNr, setEnteredNr] = useState('');
@@ -185,19 +185,5 @@ const Test1 = (props) => {
 }
 
 
-export default Test1;
+export default DateFiscaleForm;
 
-// const style ={
-//     backgroundColor: "$primary",
-//     padding: ".5rem",
-// }
-// const change =()=>{
-//     // console.log('clicked')
-// }
-// return <div className="col-md-6" style={style} key={props.id}>
-//     <div className="checkbox c-checkbox">
-//         <label className='lucrare' onClick={props.click}>
-//             <Input type="checkbox" defaultChecked/>
-//             <span className="fa fa-check"></span>{props.job}</label>
-//     </div>
-// </div>

@@ -1,0 +1,29 @@
+@import "src/styles/app/common/variables";
+@import "src/styles/app/common/mixins";
+.date-gen{
+  .date-card{
+    @include flex-center;
+  }
+  .date-title-logo{
+   font-size: 18px;
+    @include flex-center;
+  }
+  .date-logo{
+    height: 8rem;
+    width: 12rem;
+    padding: .1rem;
+    margin: .1rem;
+  }
+  .date-main{
+    height: 14rem;
+    width: 20rem;
+  }
+}
+.tip-autorizat{
+  @include flex-sb;
+  .font-para-title{
+    font-size: 1rem;
+    padding: .1rem 0;
+    margin: .2rem 0;
+  }
+}
