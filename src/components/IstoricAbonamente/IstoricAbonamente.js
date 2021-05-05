@@ -1,6 +1,8 @@
 import IstoricTable from "./IstoricTable";
 import ContentWrapper from "../Layout/ContentWrapper";
 
+import './IstoricAbonamente.scss'
+
 const IstoricAbonamente =()=>{
 
     return <ContentWrapper>

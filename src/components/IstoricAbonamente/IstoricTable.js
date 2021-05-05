@@ -1,5 +1,7 @@
 import {Card, CardBody, CardHeader, Table} from "reactstrap";
 
+import  './IstoricAbonamente.scss'
+
 const IstoricTable =(props)=>{
     const userSubscription = [
         {
@@ -35,24 +37,10 @@ const IstoricTable =(props)=>{
             value: 0
         },
     ]
-
-    const values =()=>{
-        if (userSubscription.subscription === 'standard'){
-            {userSubscription.map((item)=>{
-                return <tr key={item.id}>
-                    <td>{item.id}</td>
-                    <td>{item.subscription}</td>
-                    <td>{item.county}</td>
-                    <td>{item.from}</td>
-                    <td>{item.to}</td>
-                    <td>{item.value}</td>
-                </tr>
-            })}
+    console.log(userSubscription[0].id)
+        const style ={
+        backgroundColor:"red"
         }
-    }
-
-
-
 
     return    <Card className="card-default">
         <CardHeader>Striped Rows</CardHeader>
@@ -70,16 +58,34 @@ const IstoricTable =(props)=>{
                 </tr>
                 </thead>
                 <tbody>
+                {userSubscription.subscription === 'standard' ?
+
+                    <td style={{color:'blue'}}>{subscription}</td>:
+                    (userSubscription.map((item)=>{
+                        return <tr key={item.id}>
+                            <td>{item.id}</td>
+                            <td>{item.subscription === 'standard' ? "style" : item.subscription}</td>
+                            <td>{item.county}</td>
+                            <td>{item.from}</td>
+                            <td>{item.to}</td>
+                            <td>{item.value} ron</td>
+                        </tr>
+                    }))
+                }
                 {userSubscription.map((item)=>{
+                    if (userSubscription.subscription === 'standard'){
+                        return <td style={{color:'red'}}>{item.subscription}</td>
+                    }
                     return <tr key={item.id}>
                         <td>{item.id}</td>
                         <td>{item.subscription}</td>
                         <td>{item.county}</td>
                         <td>{item.from}</td>
                         <td>{item.to}</td>
-                        <td>{item.value}</td>
+                        <td>{item.value} ron</td>
                     </tr>
                 })}
+
 
                 </tbody>
             </Table>
