@@ -3,41 +3,98 @@
 
 
 .abonamente {
-  @include flex-center;
-
+  //border: 1px solid black;
+  tr, th, td {
+    border: 1px solid $light-grey1;
+  }
 
   .abonamente-title{
     color: $secondary;
-
-    .free {
-      background: $free;
+    text-transform: uppercase;
+    .abonamente-head{
+      width: 25%;
+    }
+    .free-member {
+      background: $free-color;
       border-top-left-radius: $radius;
       border-left: 0;
       color: $secondary;
-      @include flex-center;
-
+      text-align: center;
     }
-
-    .standard {
-      background: $standard;
+    .standard-member {
+      background: $standard-color;
       border-top-left-radius: $radius;
       border-left: 0;
       color: $secondary;
-      //@include flex-center;
-
+      width: 25%;
+      text-align: center;
 
     }
-
-    .pro {
-      background: $pro;
+    .pro-member {
+      background: $pro-color;
       border-top-right-radius: $radius;
       border-right: 0;
       color: $secondary;
-      //@include flex-center;
-
-
+      width: 25%;
+      text-align: center;
 
     }
+    .abonamente-value{
+      text-align: center;
+      height: 100px;
+      font-size: 1.1rem;
+      color: $money-color;
+      span {
+        font-size: 1.8rem;
+      }
+    }
   }
+    .money-color{
+      color: $money-color;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    .abonamente-list{
+      .date-abonamente{
+        font-size: 1rem;
+        color: $dark-font;
+      }
+      .abonamente-free{
+        color: $free-color;
+        font-size: 1rem;
+        text-align: center;
+      }
+      //.abonamente-free::after{
+      //  content: attr(data);
+      //  display: block;
+      //  position: absolute;
+      //  background-color: var(--clr-mc);
+      //  padding: 0 30px;
+      //  color: white;
+      //  border-radius: 5px;
+      //  font-size: 14px;
+      //  /* bottom: 0; */
+      //  bottom: 100%;
+      //  /* left: -150%; */
+      //  right: -450%;
+      //  /* top: 100%; */
+      //  white-space: nowrap;
+      //  transform: scale(0);
+      //  /* transition: var(--transition); */
+      //  transition: transform ease-out 150ms, bottom ease-out 120ms;
+      //}
+      .abonamente-standard{
+        color: $standard-color;
+        font-size: 1rem;
+        text-align: center;
+
+      }
+      .abonamente-pro{
+        color: $pro-color;
+        font-size: 1rem;
+        text-align: center;
+
+      }
+    }
 
 }

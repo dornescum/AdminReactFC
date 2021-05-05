@@ -485,6 +485,13 @@ const Menu = [
         icon: 'icon-note',
         translate: 'sidebar.nav.form.Tipuri abonamente'
     },
+     {
+        name: 'Modalitati de Plata',
+        path: '/modalitati-plata',
+        icon: 'icon-note',
+        translate: 'sidebar.nav.form.Modalitati de plata'
+    },
+
 ];
 
 export default Menu;
