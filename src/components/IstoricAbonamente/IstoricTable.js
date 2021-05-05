@@ -1,14 +1,14 @@
 import {Card, CardBody, CardHeader, Table} from "reactstrap";
 
-import  './IstoricAbonamente.scss'
+import './IstoricAbonamente.scss'
 
-const IstoricTable =(props)=>{
+const IstoricTable = (props) => {
     const userSubscription = [
         {
             id: 1,
             subscription: 'pro',
             county: 'texas',
-            from:'01.02.2008',
+            from: '01.02.2008',
             to: '06.08.2010',
             value: 0
         },
@@ -16,33 +16,37 @@ const IstoricTable =(props)=>{
             id: 2,
             subscription: 'standard',
             county: 'Normandy',
-            from:'01.02.2008',
+            from: '01.02.2008',
             to: '06.08.2010',
             value: 0
         },
-  {
+        {
             id: 3,
             subscription: 'free',
             county: 'Normandy',
-            from:'01.02.2008',
+            from: '01.02.2008',
             to: '06.08.2010',
             value: 0
         },
-  {
+        {
             id: 4,
             subscription: 'free',
             county: 'Normandy',
-            from:'01.02.2008',
+            from: '01.02.2008',
             to: '06.08.2010',
             value: 0
         },
     ]
     console.log(userSubscription[0].id)
-        const style ={
-        backgroundColor:"red"
-        }
+    let style = '';
+    if (userSubscription.subscription === 'pro') {
+        style = 'red'
+    }
+    if (userSubscription.subscription === 'standard') {
+        style = 'blue'
+    }
 
-    return    <Card className="card-default">
+    return <Card className="card-default">
         <CardHeader>Striped Rows</CardHeader>
         <CardBody>
             <Table striped responsive>
@@ -59,12 +63,11 @@ const IstoricTable =(props)=>{
                 </thead>
                 <tbody>
                 {userSubscription.subscription === 'standard' ?
-
-                    <td style={{color:'blue'}}>{subscription}</td>:
-                    (userSubscription.map((item)=>{
+                    <td style={{color: 'blue'}}>{subscription}</td> :
+                    (userSubscription.map((item) => {
                         return <tr key={item.id}>
                             <td>{item.id}</td>
-                            <td>{item.subscription === 'standard' ? "style" : item.subscription}</td>
+                            <td>{item.subscription === 'standard' ? 'STANDARD' : item.subscription}</td>
                             <td>{item.county}</td>
                             <td>{item.from}</td>
                             <td>{item.to}</td>
@@ -72,9 +75,9 @@ const IstoricTable =(props)=>{
                         </tr>
                     }))
                 }
-                {userSubscription.map((item)=>{
-                    if (userSubscription.subscription === 'standard'){
-                        return <td style={{color:'red'}}>{item.subscription}</td>
+                {userSubscription.map((item) => {
+                    if (userSubscription.subscription === 'standard') {
+                        return <td style={{color: 'red'}}>{item.subscription}</td>
                     }
                     return <tr key={item.id}>
                         <td>{item.id}</td>
