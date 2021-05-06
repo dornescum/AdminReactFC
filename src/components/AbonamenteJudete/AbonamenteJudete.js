@@ -6,10 +6,11 @@ import AbonamenteJudetTable from "./AbonamenteJudetTable";
 import '../IstoricAbonamente/IstoricAbonamente.scss'
 
 const AbonamenteJudete = () => {
+    let title = 'Lista judete'
     return <ContentWrapper>
-        <AbonamenteJudetTop/>
+        <AbonamenteJudetTop title={title}/>
         <AbonamenteInfo/>
-        <AbonamenteJudetTable />
+        <AbonamenteJudetTable/>
     </ContentWrapper>
 }
 export default AbonamenteJudete;

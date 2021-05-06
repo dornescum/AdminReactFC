@@ -1,0 +1,7 @@
+@import "src/styles/app/common/variables";
+@import "src/styles/app/common/mixins";
+
+
+.statistici-perioada{
+@include flex-center
+}

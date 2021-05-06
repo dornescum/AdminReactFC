@@ -503,6 +503,16 @@ const Menu = [
         icon: 'icon-note',
         translate: 'sidebar.nav.form.Judete'
     },
+    {
+        heading: 'Statistici',
+        translate: 'sidebar.heading.Statistici'
+    },
+    {
+        name: 'Generale',
+        path: '/statistici-generale',
+        icon: 'icon-note',
+        translate: 'sidebar.nav.form.Generale'
+    },
 
 ];
 

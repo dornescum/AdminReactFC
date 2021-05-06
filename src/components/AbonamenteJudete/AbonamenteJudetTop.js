@@ -1,7 +1,6 @@
 import TopHeader from "../Helpers/TopHeader";
-const AbonamenteJudetTop =()=>{
-    let title ='Lista judete'
+const AbonamenteJudetTop =(props)=>{
 
-    return <TopHeader title={title}  />
+    return <TopHeader title={props.title}  />
 }
 export default AbonamenteJudetTop;
