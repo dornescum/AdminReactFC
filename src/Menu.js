@@ -491,11 +491,17 @@ const Menu = [
         icon: 'icon-note',
         translate: 'sidebar.nav.form.Modalitati de plata'
     },
-{
+    {
         name: 'Istoric Abonamente',
         path: '/istoric-abonamente',
         icon: 'icon-note',
         translate: 'sidebar.nav.form.Istoric'
+    },
+ {
+        name: 'Judete',
+        path: '/abonamente-judete',
+        icon: 'icon-note',
+        translate: 'sidebar.nav.form.Judete'
     },
 
 ];

@@ -1,7 +1,105 @@
-.red{
-  background-color: red;
-}
-.blue{
-  background-color: blue;
-}
+@import "src/styles/app/common/variables";
+@import "src/styles/app/common/mixins";
 
+
+.table-subscription {
+  text-align: center;
+
+  .add-county {
+    background-color: $standard-color;
+    color: $secondary;
+    padding: .2rem .8rem;
+    cursor: pointer;
+    @include flex-center;
+    width: 90%;
+    margin: .1rem auto;
+    border-radius: $radius;
+    font-size: .9rem;
+    transition: $transition;
+    box-shadow: $light-shadow;
+    &:hover {
+      background-color: $success;
+      box-shadow: $dark-shadow;
+      transform: translate3d(0, -1px, 0);
+    }
+  }
+
+  .standard {
+    cursor: pointer;
+    background-color: $standard-color;
+    color: $secondary;
+    text-align: center;
+    font-size: .9rem;
+    border-radius: $radius;
+    padding: .2rem .8rem;
+    margin-bottom: 0;
+    transition: $transition;
+    box-shadow: $light-shadow;
+    &:hover {
+      background-color: $main-blue;
+      box-shadow: $dark-shadow;
+      transform: translate3d(0, -1px, 0);
+    }
+  }
+
+  .pro {
+    background-color: $pro-color;
+    color: $secondary;
+    text-align: center;
+    font-size: .9rem;
+    border-radius: $radius;
+    padding: .2rem .8rem;
+    margin-bottom: 0;
+    transition: $transition;
+    box-shadow: $light-shadow;
+    cursor: pointer;
+    &:hover {
+      background-color: $success;
+      box-shadow: $dark-shadow;
+      transform: translate3d(0, -1px, 0);
+    }
+  }
+
+  .free {
+    background-color: $free-color;
+    color: $secondary;
+    text-align: center;
+    font-size: .9rem;
+    border-radius: $radius;
+    padding: .2rem .8rem;
+    margin-bottom: 0;
+    transition: $transition;
+    box-shadow: $light-shadow;
+    cursor: pointer;
+    &:hover {
+      background-color: $success;
+      box-shadow: $dark-shadow;
+      transform: translate3d(0, -1px, 0);
+    }
+  }
+
+  .inactive {
+    background-color: $danger;
+    color: $secondary;
+    text-align: center;
+    font-size: .9rem;
+    border-radius: $radius;
+    padding: .2rem .8rem;
+    margin-bottom: 0;
+    transition: $transition;
+    box-shadow: $light-shadow;
+    cursor: pointer;
+    &:hover {
+      background-color: $success;
+      box-shadow: $dark-shadow;
+      transform: translate3d(0, -1px, 0);
+    }
+  }
+
+  @media screen and (max-width: $medium) {
+    font-size: .2rem;
+  }
+  @media screen and (max-width: $small) {
+    font-size: .2rem;
+  }
+}

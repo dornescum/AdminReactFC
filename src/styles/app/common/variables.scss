@@ -211,6 +211,7 @@ $breadcrumb-active-color:           $body-color;
 
 //adaugate
 $footer-color: #111d29;
+$main-blue:#007bff;
 $light-blue:  #87cefa;
 $light-grey1: #e3e3e3;
 $dark-font:#000000;
@@ -218,7 +219,14 @@ $money-color:#ff5406;
 $free-color:#ffb752;
 $standard-color: #428bca;
 $pro-color: #87b87f;
+
+
+
 $radius: 4px;
 $transition: all .3s ease;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 
-
+//breakpoints
+$small: 300px;
+$medium: 900px;

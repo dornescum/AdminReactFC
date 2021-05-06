@@ -44,7 +44,8 @@ const IstoricTable = (props) => {
         textAlign: 'center',
         fontSize: 14,
         borderRadius:2,
-        padding: "4px 0"
+        padding: "4px 0",
+        marginBottom: 0
     };
  let pro = {
         backgroundColor:'#87b87f',
@@ -52,7 +53,8 @@ const IstoricTable = (props) => {
         textAlign: 'center',
         fontSize: 14,
         borderRadius:2,
-     padding: "4px 0"
+     padding: "4px 0",
+     marginBottom: 0
  };
     let free = {
         backgroundColor:'#ffb752',
@@ -60,21 +62,22 @@ const IstoricTable = (props) => {
         textAlign: 'center',
         fontSize: 14,
         borderRadius:2,
-        padding: "4px 0"
+        padding: "4px 0",
+        marginBottom: 0
     };
 
     return <Card className="card-default">
         <CardHeader>Striped Rows</CardHeader>
         <CardBody>
-            <Table striped responsive>
+            <Table striped responsive className='table-subscription'>
                 <thead>
                 <tr>
                     <th>Nr Crt</th>
                     <th>Tip abonament</th>
                     <th>Judet</th>
-                    <th>de la</th>
-                    <th>pana la</th>
-                    <th>valoare abonament</th>
+                    <th>De la</th>
+                    <th>Pana la</th>
+                    <th>Valoare abonament</th>
 
                 </tr>
                 </thead>
