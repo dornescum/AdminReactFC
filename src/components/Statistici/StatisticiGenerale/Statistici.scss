@@ -3,5 +3,12 @@
 
 
 .statistici-perioada{
-@include flex-center
+  width: 80%;
+  margin: 0 auto;
+  .cauta-perioada{
+    margin: .5rem 0 0 0;
+   text-align: center;
+    color: $dark-font;
+    font-weight: bold;
+  }
 }
