@@ -23,7 +23,7 @@ const IstoricTable = (props) => {
         {
             id: 3,
             subscription: 'free',
-            county: 'Normandy',
+            county: 'Berceni',
             from: '01.02.2008',
             to: '06.08.2010',
             value: 0
@@ -31,20 +31,37 @@ const IstoricTable = (props) => {
         {
             id: 4,
             subscription: 'free',
-            county: 'Normandy',
+            county: 'Beerceni',
             from: '01.02.2008',
             to: '06.08.2010',
             value: 0
         },
     ]
     console.log(userSubscription[0].id)
-    let style = '';
-    if (userSubscription.subscription === 'pro') {
-        style = 'red'
-    }
-    if (userSubscription.subscription === 'standard') {
-        style = 'blue'
-    }
+    let standard = {
+        backgroundColor:'#428bca',
+        color: 'white',
+        textAlign: 'center',
+        fontSize: 14,
+        borderRadius:2,
+        padding: "4px 0"
+    };
+ let pro = {
+        backgroundColor:'#87b87f',
+        color: 'white',
+        textAlign: 'center',
+        fontSize: 14,
+        borderRadius:2,
+     padding: "4px 0"
+ };
+    let free = {
+        backgroundColor:'#ffb752',
+        color: 'white',
+        textAlign: 'center',
+        fontSize: 14,
+        borderRadius:2,
+        padding: "4px 0"
+    };
 
     return <Card className="card-default">
         <CardHeader>Striped Rows</CardHeader>
@@ -62,32 +79,19 @@ const IstoricTable = (props) => {
                 </tr>
                 </thead>
                 <tbody>
-                {userSubscription.subscription === 'standard' ?
-                    <td style={{color: 'blue'}}>{subscription}</td> :
-                    (userSubscription.map((item) => {
+                {userSubscription.map((item) => {
                         return <tr key={item.id}>
                             <td>{item.id}</td>
-                            <td>{item.subscription === 'standard' ? 'STANDARD' : item.subscription}</td>
+                            <td>{item.subscription === 'standard' ? <p style={standard}>Standard</p> : item.subscription ||
+                                item.subscription === "pro" ? <p style={pro}>Pro</p>: item.subscription}
+                            </td>
                             <td>{item.county}</td>
                             <td>{item.from}</td>
                             <td>{item.to}</td>
                             <td>{item.value} ron</td>
                         </tr>
-                    }))
+                    })
                 }
-                {userSubscription.map((item) => {
-                    if (userSubscription.subscription === 'standard') {
-                        return <td style={{color: 'red'}}>{item.subscription}</td>
-                    }
-                    return <tr key={item.id}>
-                        <td>{item.id}</td>
-                        <td>{item.subscription}</td>
-                        <td>{item.county}</td>
-                        <td>{item.from}</td>
-                        <td>{item.to}</td>
-                        <td>{item.value} ron</td>
-                    </tr>
-                })}
 
 
                 </tbody>
@@ -96,3 +100,5 @@ const IstoricTable = (props) => {
     </Card>
 }
 export default IstoricTable;
+// <i className='fa fa-user' style={{paddingRight:" .3rem"}}></i>
+// <i className='fa fa-trophy'  style={{paddingRight:" .3rem"}}></i>
