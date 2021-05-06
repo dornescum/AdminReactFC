@@ -17,6 +17,7 @@
     font-size: .9rem;
     transition: $transition;
     box-shadow: $light-shadow;
+
     &:hover {
       background-color: $success;
       box-shadow: $dark-shadow;
@@ -35,6 +36,7 @@
     margin-bottom: 0;
     transition: $transition;
     box-shadow: $light-shadow;
+
     &:hover {
       background-color: $main-blue;
       box-shadow: $dark-shadow;
@@ -53,6 +55,7 @@
     transition: $transition;
     box-shadow: $light-shadow;
     cursor: pointer;
+
     &:hover {
       background-color: $success;
       box-shadow: $dark-shadow;
@@ -71,6 +74,7 @@
     transition: $transition;
     box-shadow: $light-shadow;
     cursor: pointer;
+
     &:hover {
       background-color: $success;
       box-shadow: $dark-shadow;
@@ -89,6 +93,8 @@
     transition: $transition;
     box-shadow: $light-shadow;
     cursor: pointer;
+    //animation: prelungire 6s ease-out infinite;
+
     &:hover {
       background-color: $success;
       box-shadow: $dark-shadow;
@@ -96,10 +102,62 @@
     }
   }
 
-  @media screen and (max-width: $medium) {
-    font-size: .2rem;
-  }
-  @media screen and (max-width: $small) {
-    font-size: .2rem;
-  }
+  //@keyframes prelungire {
+  //  0% {
+  //    transform: scale(1);
+  //  }
+  //  10% {
+  //    transform: scale(1.01);
+  //    background-color: #c70000 ;
+  //  }
+  //  20% {
+  //    transform: scale(1.02);
+  //    background-color: #bd0000 ;
+  //  }
+  //
+  //  30% {
+  //    transform: scale(1.03);
+  //    background-color: #b80000 ;
+  //  }
+  //  40% {
+  //    transform: scale(1.04);
+  //    background-color:  	#a80000 ;
+  //  }
+  //
+  //  50% {
+  //    transform: scale(1.05);
+  //    background-color: $danger;
+  //  }
+  //  60% {
+  //    transform: scale(1.04);
+  //    background-color: #cc0000 ;
+  //  }
+  //
+  //  70% {
+  //    transform: scale(1.03);
+  //    background-color:  	#d10000 ;
+  //  }
+  //  80% {
+  //    transform: scale(1.02);
+  //    background-color:  	#e60000 ;
+  //  }
+  //  90% {
+  //    transform: scale(1.01);
+  //    background-color: $danger-dark;
+  //  }
+  //
+  //  100% {
+  //    transform: scale(1);
+  //  }
+  //}
+
 }
+
+.abonamente-info {
+  padding: 2rem 1rem;
+}
+
+//@media screen and (max-width: $small) {
+//  font-size: .6rem;
+//  padding: .1rem .3rem;
+//}

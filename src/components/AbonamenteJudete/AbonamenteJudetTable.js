@@ -56,10 +56,10 @@ const AbonamenteJudetTable =()=>{
                     <th>Nr Crt</th>
                     <th>Tip abonament</th>
                     <th>Judet</th>
-                    <th>de la</th>
-                    <th>pana la</th>
-                    <th>valoare abonament</th>
-                    <th>status</th>
+                    <th>De la</th>
+                    <th>Pana la</th>
+                    <th>Valoare abonament</th>
+                    <th>Status</th>
                     <th className='add-county'>Adauga Judet</th>
 
                 </tr>

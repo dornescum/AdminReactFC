@@ -38,33 +38,7 @@ const IstoricTable = (props) => {
         },
     ]
     console.log(userSubscription[0].id)
-    let standard = {
-        backgroundColor:'#428bca',
-        color: 'white',
-        textAlign: 'center',
-        fontSize: 14,
-        borderRadius:2,
-        padding: "4px 0",
-        marginBottom: 0
-    };
- let pro = {
-        backgroundColor:'#87b87f',
-        color: 'white',
-        textAlign: 'center',
-        fontSize: 14,
-        borderRadius:2,
-     padding: "4px 0",
-     marginBottom: 0
- };
-    let free = {
-        backgroundColor:'#ffb752',
-        color: 'white',
-        textAlign: 'center',
-        fontSize: 14,
-        borderRadius:2,
-        padding: "4px 0",
-        marginBottom: 0
-    };
+
 
     return <Card className="card-default">
         <CardHeader>Striped Rows</CardHeader>
@@ -85,8 +59,9 @@ const IstoricTable = (props) => {
                 {userSubscription.map((item) => {
                         return <tr key={item.id}>
                             <td>{item.id}</td>
-                            <td>{item.subscription === 'standard' ? <p style={standard}>Standard</p> : item.subscription ||
-                                item.subscription === "pro" ? <p style={pro}>Pro</p>: item.subscription}
+                            <td>{item.subscription === 'standard' ? <p className='standard'> Standard</p>  : item.subscription ||
+                                item.subscription === "pro" ?  <p className='pro'>  Pro</p>: item.subscription ||
+                            item.subscription === "free" ?  <p className='free'>  Free</p>: item.subscription}
                             </td>
                             <td>{item.county}</td>
                             <td>{item.from}</td>
