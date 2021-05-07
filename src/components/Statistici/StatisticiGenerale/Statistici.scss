@@ -5,10 +5,21 @@
 .statistici-perioada{
   width: 80%;
   margin: 0 auto;
+
   .cauta-perioada{
     margin: .5rem 0 0 0;
    text-align: center;
     color: $dark-font;
     font-weight: bold;
   }
+  .perioada-select{
+    padding: 0 .5rem;
+    @media screen and (max-width: $medium) {
+      font-size: .6rem;
+      padding: .5rem .3rem;
+    }
+  }
+
+
+
 }
