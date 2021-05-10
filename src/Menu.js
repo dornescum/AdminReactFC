@@ -427,38 +427,42 @@ const Menu = [
         heading: 'Datele Firmei /PFA',
         translate: 'sidebar.heading.Datele Firmei'
     },
+    // {
+    //     name: 'Datele firmei /PFA',
+    //     icon: 'icon-note',
+    //     translate: 'sidebar.nav.form.Datele Firmei',
+    //     submenu: [{
+    //         name: 'Date generale',
+    //         path: '/date-gen',
+    //         translate: 'sidebar.nav.form.Date Generale'
+    //     },
     {
-        name: 'Datele firmei /PFA',
+        name: 'Date Fiscale',
+        path: '/date-fiscale',
         icon: 'icon-note',
-        translate: 'sidebar.nav.form.Datele Firmei',
-        submenu: [{
-            name: 'Date generale',
-            path: '/date-gen',
-            translate: 'sidebar.nav.form.Date Generale'
-        },
-            {
-                name: 'Date Fiscale',
-                path: '/date-fiscale',
-                translate: 'sidebar.nav.form.Date Fiscale'
-            },
-            {
-                name: 'Despre Firma',
-                path: '/despre-firma',
-                translate: 'sidebar.nav.form.Despre Firma'
-            },
-            {
-                name: 'Galerie Foto',
-                path: '/galerie-foto',
-                translate: 'sidebar.nav.form.Galerie Foto'
-            },
-            {
-                name: 'Tipuri Lucrari',
-                path: '/tipuri-lucrari',
-                translate: 'sidebar.nav.form.Tipuri Lucrari'
-            },
-
-        ]
+        translate: 'sidebar.nav.form.Date Fiscale'
     },
+    {
+        name: 'Despre Firma',
+        path: '/despre-firma',
+        icon: 'icon-note',
+        translate: 'sidebar.nav.form.Despre Firma'
+    },
+    {
+        name: 'Galerie Foto',
+        path: '/galerie-foto',
+        icon: 'icon-note',
+        translate: 'sidebar.nav.form.Galerie Foto'
+    },
+    {
+        name: 'Tipuri Lucrari',
+        path: '/tipuri-lucrari',
+        icon: 'icon-note',
+        translate: 'sidebar.nav.form.Tipuri Lucrari'
+    },
+
+    //     ]
+    // },
     {
         heading: 'Contact',
         translate: 'sidebar.heading.Datele Firmei'
@@ -485,7 +489,7 @@ const Menu = [
         icon: 'icon-note',
         translate: 'sidebar.nav.form.Tipuri abonamente'
     },
-     {
+    {
         name: 'Modalitati de Plata',
         path: '/modalitati-plata',
         icon: 'icon-note',
@@ -497,7 +501,7 @@ const Menu = [
         icon: 'icon-note',
         translate: 'sidebar.nav.form.Istoric'
     },
- {
+    {
         name: 'Judete',
         path: '/abonamente-judete',
         icon: 'icon-note',
@@ -512,6 +516,12 @@ const Menu = [
         path: '/statistici-generale',
         icon: 'icon-note',
         translate: 'sidebar.nav.form.Generale'
+    },
+{
+        name: 'TEST',
+        path: '/statistici-test',
+        icon: 'icon-note',
+        translate: 'sidebar.nav.form.Test'
     },
 
 ];

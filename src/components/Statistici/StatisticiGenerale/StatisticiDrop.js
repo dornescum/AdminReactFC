@@ -35,8 +35,6 @@ const StatisticiDrop = () => {
             </Col>
 
         </Row>
-
-
     </div>
 }
 export default StatisticiDrop;

@@ -112,6 +112,7 @@ const ModalitatiPlata = lazy(() => import('./components/ModalitatiPlata/Modalita
 const IstoricAbonamente = lazy(() => import('./components/IstoricAbonamente/IstoricAbonamente'));
 const AbonamenteJudete = lazy(() => import('./components/AbonamenteJudete/AbonamenteJudete'));
 const StatisticiGenerale = lazy(() => import('./components/Statistici/StatisticiGenerale/StatisticiGenerale'));
+const StatisticiTest = lazy(() => import('./components/Statistici/StatisticiTest/StatisticiTest'));
 
 
 
@@ -221,6 +222,7 @@ const Routes = ({ location }) => {
 
                                 {/*Statistici*/}
                                 <Route path="/statistici-generale" component={waitFor(StatisticiGenerale)}/>
+                                <Route path="/statistici-test" component={waitFor(StatisticiTest)}/>
 
 
                                 {/*Charts*/}
