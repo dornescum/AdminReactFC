@@ -517,11 +517,17 @@ const Menu = [
         icon: 'icon-note',
         translate: 'sidebar.nav.form.Generale'
     },
-{
+    {
         name: 'TEST',
         path: '/statistici-test',
         icon: 'icon-note',
         translate: 'sidebar.nav.form.Test'
+    },
+    {
+        name: 'Judete',
+        path: '/statistici-judete',
+        icon: 'icon-note',
+        translate: 'sidebar.nav.form.Statistici-Judete'
     },
 
 ];
