@@ -69,9 +69,9 @@ class Login extends Component {
         return (
             <div className="block-center mt-4 wd-xl">
                 <div className="card card-flat">
-                    <div className="card-header text-center bg-dark">
-                        <a href="">
-                            <img className="block-center rounded" src="img/logo.png" alt="Logo"/>
+                    <div className="card-header text-center bg-light">
+                        <a href="/statistici-judete">
+                            <img className="block-center rounded" src="img/logo-2.png" alt="Logo" height={80} width={240}/>
                         </a>
                     </div>
                     <div className="card-body">
