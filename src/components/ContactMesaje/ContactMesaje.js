@@ -40,8 +40,6 @@ const ContactMesaje = () => {
         <Card>
             <CardBody>
                 <fieldset>
-
-
         {/*{mesajeClienti.map((item) => {*/}
         {/*    return <MesajeClienti name={item.name} date={item.date} message={item.message} key={item.id} id={item.id}/>*/}
         {/*})}*/}
