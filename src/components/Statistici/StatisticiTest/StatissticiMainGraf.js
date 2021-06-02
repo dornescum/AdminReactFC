@@ -17,86 +17,86 @@ const StatissticiMainGraf = () => {
             // }]},
 
 
-                        // {
-                        //     y: "2015", a: 100, b: 90, id: 1, month: 'ianuarie', visitors: 2232,
-                        //     nrPages: 210,
-                        //     unicPages: 50,
-                        // },
-                        // {
-                        //     y: "2015", a: 33, b: 91, id: 2, month: 'februarie', visitors: 2222,
-                        //     nrPages: 210,
-                        //     unicPages: 50,
-                        // },
-                        // {
-                        //     y: "2015", a: 37, b: 92, id: 3, month: 'martie', visitors: 212,
-                        //     nrPages: 210,
-                        //     unicPages: 50,
-                        // },
-                        // {
-                        //     y: "2015", a: 43, b: 70, id: 4, month: 'aprilie', visitors: 42,
-                        //     nrPages: 430,
-                        //     unicPages: 50,
-                        // },
-                        // {
-                        //     y: "2015", a: 100, b: 50, id: 5, month: 'mai', visitors: 342,
-                        //     nrPages: 340,
-                        //     unicPages: 50,
-                        // },
-                        // {
-                        //     y: "2015", a: 10, b: 10, id: 6, month: 'iunie', visitors: 542,
-                        //     nrPages: 220,
-                        //     unicPages: 50,
-                        // },
-                        // {
-                        //     y: "2015", a: 12, b: 20, id: 7, month: 'iulie', visitors: 434,
-                        //     nrPages: 340,
-                        //     unicPages: 50,
-                        // },
-                        // {
-                        //     y: "2015", a: 17, b: 14, id: 8, month: 'august', visitors: 4324,
-                        //     nrPages: 430,
-                        //     unicPages: 50,
-                        // },
-                        //
-                        // {
-                        //     y: "2016", a: 75, b: 65, id: Math.floor(Math.random() * 1334542 / 2), month: 'ianuarie', visitors: 8,
-                        //     nrPages: 11,
-                        //     unicPages: 60,
-                        // },
-                        // {
-                        //     y: "2016", a: 75, b: 65, id: Math.floor(Math.random() * 1334542 / 2), month: 'februarie', visitors: 8,
-                        //     nrPages: 11,
-                        //     unicPages: 60,
-                        // },
-                        // {
-                        //     y: "2016", a: 75, b: 65, id: Math.floor(Math.random() * 1334542 / 2), month: 'martie', visitors: 8,
-                        //     nrPages: 11,
-                        //     unicPages: 60,
-                        // },
-                        // {
-                        //     y: "2016", a: 75, b: 65, id: Math.floor(Math.random() * 1334542 / 2), month: 'aprilie', visitors: 8,
-                        //     nrPages: 11,
-                        //     unicPages: 60,
-                        // },
-                        // {
-                        //     y: "2016", a: 75, b: 65, id: Math.floor(Math.random() * 1334542 / 2), month: 'iunie', visitors: 8,
-                        //     nrPages: 11,
-                        //     unicPages: 60,
-                        // },
-                        // {
-                        //     y: "2016", a: 75, b: 65, id: Math.floor(Math.random() * 1334542 / 2), month: 'iulie', visitors: 8,
-                        //     nrPages: 11,
-                        //     unicPages: 60,
-                        // },
+                        {
+                            y: "2015", a: 100, b: 90, id: 1, month: 'ianuarie', visitors: 2232,
+                            nrPages: 210,
+                            unicPages: 50,
+                        },
+                        {
+                            y: "2015", a: 33, b: 91, id: 2, month: 'februarie', visitors: 2222,
+                            nrPages: 210,
+                            unicPages: 50,
+                        },
+                        {
+                            y: "2015", a: 37, b: 92, id: 3, month: 'martie', visitors: 212,
+                            nrPages: 210,
+                            unicPages: 50,
+                        },
+                        {
+                            y: "2015", a: 43, b: 70, id: 4, month: 'aprilie', visitors: 42,
+                            nrPages: 430,
+                            unicPages: 50,
+                        },
+                        {
+                            y: "2015", a: 100, b: 50, id: 5, month: 'mai', visitors: 342,
+                            nrPages: 340,
+                            unicPages: 50,
+                        },
+                        {
+                            y: "2015", a: 10, b: 10, id: 6, month: 'iunie', visitors: 542,
+                            nrPages: 220,
+                            unicPages: 50,
+                        },
+                        {
+                            y: "2015", a: 12, b: 20, id: 7, month: 'iulie', visitors: 434,
+                            nrPages: 340,
+                            unicPages: 50,
+                        },
+                        {
+                            y: "2015", a: 17, b: 14, id: 8, month: 'august', visitors: 4324,
+                            nrPages: 430,
+                            unicPages: 50,
+                        },
+
+                        {
+                            y: "2016", a: 75, b: 65, id: Math.floor(Math.random() * 1334542 / 2), month: 'ianuarie', visitors: 8,
+                            nrPages: 11,
+                            unicPages: 60,
+                        },
+                        {
+                            y: "2016", a: 75, b: 65, id: Math.floor(Math.random() * 1334542 / 2), month: 'februarie', visitors: 8,
+                            nrPages: 11,
+                            unicPages: 60,
+                        },
+                        {
+                            y: "2016", a: 75, b: 65, id: Math.floor(Math.random() * 1334542 / 2), month: 'martie', visitors: 8,
+                            nrPages: 11,
+                            unicPages: 60,
+                        },
+                        {
+                            y: "2016", a: 75, b: 65, id: Math.floor(Math.random() * 1334542 / 2), month: 'aprilie', visitors: 8,
+                            nrPages: 11,
+                            unicPages: 60,
+                        },
+                        {
+                            y: "2016", a: 75, b: 65, id: Math.floor(Math.random() * 1334542 / 2), month: 'iunie', visitors: 8,
+                            nrPages: 11,
+                            unicPages: 60,
+                        },
+                        {
+                            y: "2016", a: 75, b: 65, id: Math.floor(Math.random() * 1334542 / 2), month: 'iulie', visitors: 8,
+                            nrPages: 11,
+                            unicPages: 60,
+                        },
 
 
-        {y: "2015", a: 100, b: 90, id:1},
-        {y: "2016", a: 75, b: 65, id:2},
-        {y: "2017", a: 50, b: 40, id:13},
-        {y: "2018", a: 75, b: 65, id:4},
-        {y: "2019", a: 50, b: 40, id:5},
-        {y: "2020", a: 75, b: 65, id:6},
-        {y: "2021", a: 40, b: 90, id:7}
+        // {y: "2015", a: 100, b: 90, id:1},
+        // {y: "2016", a: 75, b: 65, id:2},
+        // {y: "2017", a: 50, b: 40, id:13},
+        // {y: "2018", a: 75, b: 65, id:4},
+        // {y: "2019", a: 50, b: 40, id:5},
+        // {y: "2020", a: 75, b: 65, id:6},
+        // {y: "2021", a: 40, b: 90, id:7}
                     ])
     const [options, setOptions] = useState(
         {
@@ -110,6 +110,7 @@ const StatissticiMainGraf = () => {
     )
     const changeMonth = () => {
         setData(data.filter((item)=>{
+            console.log(item)
             return item === item.month
         }))
     }
@@ -124,7 +125,7 @@ const StatissticiMainGraf = () => {
                 <Col lg='4'>
                     <div className='perioada-select'>
                         <select defaultValue="" className="custom-select" multiple="">
-                            <option>Luna</option>
+                            <option onChange={changeMonth}>Luna</option>
                             {data.map((item) => {
                                 return <option defaultValue="1" key={item.id}>{item.month}</option>
                             })}
