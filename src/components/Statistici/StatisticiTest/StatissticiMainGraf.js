@@ -171,6 +171,7 @@ const StatissticiMainGraf = () => {
                                 <td>{item.b}</td>
                                 <td>{item.nrPages}</td>
                                 <td>{item.unicPages}</td>
+
                             </tr>
                         })
                         }
