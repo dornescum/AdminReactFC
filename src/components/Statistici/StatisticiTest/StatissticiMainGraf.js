@@ -1,22 +1,10 @@
 import {Card, CardBody, CardHeader, Col, Row, Table} from "reactstrap";
 import MorrisChart from "../../Charts/Morris";
-import {useState} from 'react';
+import {useState, useRef} from 'react';
 
 
 const StatissticiMainGraf = () => {
     const [data, setData] = useState([
-            // {
-            // y: "2015", a: 100, b: 90, id: 1, month: [{
-            //     ianuarie: [{visitors: 12, pages: 1, id: 100}],
-            //     februarie: [{visitors: 2, pages: 1, id: 101}]
-            // }]},
-            //      {
-            // y: "2016", a: 100, b: 90, id: 2, month: [{
-            //     ianuarie: [{visitors: 12, pages: 1, id: 1011}],
-            //     februarie: [{visitors: 2, pages: 1, id: 1012}]
-            // }]},
-
-
                         {
                             y: "2015", a: 100, b: 90, id: 1, month: 'ianuarie', visitors: 2232,
                             nrPages: 210,
@@ -88,15 +76,6 @@ const StatissticiMainGraf = () => {
                             nrPages: 11,
                             unicPages: 60,
                         },
-
-
-        // {y: "2015", a: 100, b: 90, id:1},
-        // {y: "2016", a: 75, b: 65, id:2},
-        // {y: "2017", a: 50, b: 40, id:13},
-        // {y: "2018", a: 75, b: 65, id:4},
-        // {y: "2019", a: 50, b: 40, id:5},
-        // {y: "2020", a: 75, b: 65, id:6},
-        // {y: "2021", a: 40, b: 90, id:7}
                     ])
     const [options, setOptions] = useState(
         {
@@ -108,10 +87,20 @@ const StatissticiMainGraf = () => {
             resize: true
         }
     )
-    const changeMonth = () => {
+    const month =useRef()
+    const year =useRef()
+
+    const changeMonth = (e) => {
         setData(data.filter((item)=>{
             console.log(item)
-            return item === item.month
+            return item.month === e.target.value;
+        }))
+        month.current.value = ''
+    }
+    const changeYear = (e) => {
+        setData(data.filter((item)=>{
+            console.log(item)
+            return item.y === e.target.value;
         }))
     }
 
@@ -124,7 +113,7 @@ const StatissticiMainGraf = () => {
                 </Col>
                 <Col lg='4'>
                     <div className='perioada-select'>
-                        <select defaultValue="" className="custom-select" multiple="">
+                        <select className="custom-select"  id="monthFilter" onClick={changeMonth} ref={month}>
                             <option onChange={changeMonth}>Luna</option>
                             {data.map((item) => {
                                 return <option defaultValue="1" key={item.id}>{item.month}</option>
@@ -134,7 +123,7 @@ const StatissticiMainGraf = () => {
                 </Col>
                 <Col lg='4'>
                     <div className='perioada-select'>
-                        <select defaultValue="" className="custom-select" multiple="">
+                        <select defaultValue="" className="custom-select" multiple="" onClick={changeYear} ref={year}>
                             <option>Anul</option>
                             {data.map((item) => {
 
@@ -191,3 +180,21 @@ const StatissticiMainGraf = () => {
     </>
 }
 export default StatissticiMainGraf;
+// {
+// y: "2015", a: 100, b: 90, id: 1, month: [{
+//     ianuarie: [{visitors: 12, pages: 1, id: 100}],
+//     februarie: [{visitors: 2, pages: 1, id: 101}]
+// }]},
+//      {
+// y: "2016", a: 100, b: 90, id: 2, month: [{
+//     ianuarie: [{visitors: 12, pages: 1, id: 1011}],
+//     februarie: [{visitors: 2, pages: 1, id: 1012}]
+// }]},
+
+// {y: "2015", a: 100, b: 90, id:1},
+// {y: "2016", a: 75, b: 65, id:2},
+// {y: "2017", a: 50, b: 40, id:13},
+// {y: "2018", a: 75, b: 65, id:4},
+// {y: "2019", a: 50, b: 40, id:5},
+// {y: "2020", a: 75, b: 65, id:6},
+// {y: "2021", a: 40, b: 90, id:7}
