@@ -7,7 +7,7 @@ const IstoricAbonamente =()=>{
 
     return <ContentWrapper>
         <div className="content-heading">
-            <h3>Istoric abonamente</h3>
+            <h3 style={{margin: 0}}>Istoric abonamente</h3>
         </div>
 
            <IstoricTable />

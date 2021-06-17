@@ -26,7 +26,7 @@ const TipuriAbonamente = () => {
     ]
     return <ContentWrapper>
         <div className="content-heading">
-            <h2>Tipuri abonamente</h2>
+            <h2 style={{margin: 0}}>Tipuri abonamente</h2>
         </div>
 
         <Tooltip
@@ -113,7 +113,6 @@ const TipuriAbonamente = () => {
                             <Tooltip title="minimala" position="top" trigger="click">
                                 preferentiale {" "}
                             </Tooltip>
-
                             <i className="fa fa-info-circle"></i></td>
 
                     </tr>

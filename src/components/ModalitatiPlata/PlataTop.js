@@ -1,7 +1,7 @@
 const PlataTop =(props)=>{
     return  <div className="content-heading">
         <div>
-            <h3>Modalitati de plata</h3>
+            <h3 style={{margin: 0}}>Modalitati de plata</h3>
         </div>
     </div>
 }

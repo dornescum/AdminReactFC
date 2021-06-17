@@ -1,0 +1,36 @@
+[{
+    "id": "97",
+    "an": "2019",
+    "luna": "1",
+    "nr_vizitatori": "10282",
+    "nr_pagini": "43723",
+    "nr_solicitari_oferta": "0",
+    "nr_vizitatori_date_contact": "531",
+    "nr_afisari_date_contact": "887",
+    "createdon": "1609542010",
+    "modifiedon": "1612134007"
+  },
+  {
+    "id": "98",
+    "an": "2020",
+    "luna": "2",
+    "nr_vizitatori": "10571",
+    "nr_pagini": "48067",
+    "nr_solicitari_oferta": "0",
+    "nr_vizitatori_date_contact": "578",
+    "nr_afisari_date_contact": "940",
+    "createdon": "1612220409",
+    "modifiedon": "1614553214"
+  },
+  {
+    "id": "99",
+    "an": "2021",
+    "luna": "3",
+    "nr_vizitatori": "614",
+    "nr_pagini": "2507",
+    "nr_solicitari_oferta": "0",
+    "nr_vizitatori_date_contact": "33",
+    "nr_afisari_date_contact": "62",
+    "createdon": "1614639613",
+    "modifiedon": "1614639613"
+  }]
