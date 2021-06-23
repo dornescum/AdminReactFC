@@ -115,6 +115,7 @@ const StatisticiGenerale = lazy(() => import('./components/Statistici/Statistici
 const StatisticiTest = lazy(() => import('./components/Statistici/StatisticiTest/StatisticiTest'));
 const StatisticiJudete = lazy(() => import('./components/Statistici/StatisticiJudete/StatisticiJudete'));
 const StatisticiStack = lazy(() => import('./components/Statistici/StatisticiStack/StatisticiStack'));
+const StatisticiMax = lazy(() => import('./components/Statistici/StatisticeiMax/StatisticeiMax'));
 
 
 
@@ -227,6 +228,7 @@ const Routes = ({ location }) => {
                                 <Route path="/statistici-test" component={waitFor(StatisticiTest)}/>
                                 <Route path="/statistici-judete" component={waitFor(StatisticiJudete)}/>
                                 <Route path="/statistici-stack" component={waitFor(StatisticiStack)}/>
+                                <Route path="/statistici-max" component={waitFor(StatisticiMax)}/>
 
 
                                 {/*Charts*/}

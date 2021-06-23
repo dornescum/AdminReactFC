@@ -1,6 +1,7 @@
 import {Card, CardBody, CardHeader, Table} from "reactstrap";
+import {useEffect, useState} from "react";
 
-const StatisticiTable = () => {
+const StatisticiTable = (props) => {
     const userVisitors = [
         {
             id: 1,
@@ -32,8 +33,36 @@ const StatisticiTable = () => {
         },
 
     ];
+    const [selectedOption, setSelectedOption] = useState([]);
 
+    // const filterData=()=>{
+    //     setData(props.chageMonth)
+    // }
+    // useEffect(() => {
+    //     const swapi  ='https://swapi.dev/api/people/1/ '
+    //     // fetch('data/info_2018.json')
+    //     fetch(swapi)
+    //         // .then(res => res.json())
+    //         .then(res => res.json())
+    //         .then(
+    //             (result) => {
+    //                 console.log(result)
+    //                 const array = Object.entries(result)
+    //                 // setIsLoaded(true);
+    //                 setSelectedOption(array);
+    //             },
+    //             (error) => {
+    //                 // setIsLoaded(true);
+    //                 // setError(error);
+    //                 console.log(error)
+    //             }
+    //         )
+    // }, [])
 
+    // const changeMonth = (e) => {
+    //     console.log(e.target.value)
+    //     setSelectedOption(e.target.value)
+    // }
     return <Card className="card-default">
         <CardHeader>Striped Rows</CardHeader>
         <CardBody>
@@ -48,8 +77,8 @@ const StatisticiTable = () => {
                 </tr>
                 </thead>
                 <tbody>
-                {userVisitors.map((item) => {
-                    return <tr key={item.id}>
+                {selectedOption.map((item) => {
+                    return <tr key={item.id} onChange={props.changeMonth}>
                         <td>{item.id}</td>
                         <td>{item.month}</td>
                         <td>{item.visitors}</td>

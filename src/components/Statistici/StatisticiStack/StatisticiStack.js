@@ -39,7 +39,7 @@ const StatisticiStack = () => {
             onChange={(e) => setSelectedOption(e.target.value)}
         >
             {selectedOption.map((option) => (
-                <option key={option} value={option}>
+                <option key={option} value={option} >
                     {option}
                 </option>
             ))}

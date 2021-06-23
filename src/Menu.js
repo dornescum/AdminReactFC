@@ -529,11 +529,17 @@ const Menu = [
         icon: 'icon-note',
         translate: 'sidebar.nav.form.Statistici-Judete'
     },
-{
+    {
         name: 'Test',
         path: '/statistici-stack',
         icon: 'icon-note',
         translate: 'sidebar.nav.form.Statistici-Stack'
+    },
+    {
+        name: 'Max',
+        path: '/statistici-max',
+        icon: 'icon-note',
+        translate: 'sidebar.nav.form.Statistici-Max'
     },
 
 ];
