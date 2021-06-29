@@ -1,5 +1,4 @@
 import {Col, PaginationItem, PaginationLink, Row, Pagination} from "reactstrap";
-// import ContentWrapper from "../Layout/ContentWrapper";
 
 const PaginationModel =()=>{
     return <Row>

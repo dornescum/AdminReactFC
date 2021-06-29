@@ -1,5 +1,4 @@
 import {Card, Col} from "reactstrap";
-// import ContentWrapper from "../Layout/ContentWrapper";
 
 const MesajeClienti = (props) => {
     return <div className="form-group row mesaje-subtitle">

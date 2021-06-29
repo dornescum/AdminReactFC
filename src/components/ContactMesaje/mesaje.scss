@@ -1,19 +1,81 @@
 @import "src/styles/app/common/mixins";
+@import "src/styles/app/common/variables";
 
-.mesaje-subtitle{
-  .flex-sb{
+.mesaje-subtitle {
+  .flex-sb {
     @include flex-sb;
     width: 100%;
     padding: 0 2rem;
-    .info-message{
+
+    .info-message {
       display: flex;
     }
-    .bold{
+
+    .bold {
       font-weight: bold;
     }
   }
 }
 
-.pagination{
+.pagination {
   @include flex-center;
+
+
+}
+
+.paginationBtn {
+  @include flex-center;
+  list-style-type: none;
+  padding: .2rem;
+  margin: .1rem;
+  text-decoration: none;
+  li a {
+    padding: .9rem;
+    margin: .9rem;
+    border-radius: $radius;
+    &:hover{
+      background-color: $standard-color;
+      color: $secondary !important;
+    }
+    @media (max-width: $tablet-md){
+      padding: .5rem;
+      margin: .5rem;
+    }
+    @media (max-width: $tablet){
+      padding: .5rem;
+      margin: .5rem;
+    }
+    @media (max-width: $sm){
+      padding: .3rem;
+      margin: .3rem;
+    }
+  }
+
+  .previousBtn {
+    padding: .9rem;
+    margin: .9rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: $standard-color;
+    @media (max-width: $sm){
+      padding: .1rem;
+      margin: .1rem;
+    }
+  }
+  .nextBtn {
+    padding: .9rem;
+    margin: .9rem;
+    cursor: pointer;
+    color: $standard-color;
+    text-decoration: none;
+    @media (max-width: $sm){
+      padding: .1rem;
+      margin: .1rem;
+    }
+  }
+  .paginationActive{
+    background-color: $standard-color;
+    color: $secondary;
+    text-decoration: none;
+  }
 }
