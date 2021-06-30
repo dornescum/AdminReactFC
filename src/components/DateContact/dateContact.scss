@@ -5,16 +5,17 @@
   @include flex-center;
   list-style-type: none;
   padding: .2rem;
-  margin: .1rem;
+  margin: .2rem;
   text-decoration: none;
   li {
-    padding: .2rem;
-    margin: .2rem;
+    padding: .2rem .5rem 0 .5rem;
+    margin: .5rem;
     border-radius: $radius;
+    //@include flex-center;
 
     &:hover {
-      background-color: $standard-color;
-      color: $secondary !important;
+      //background-color: $light-grey1;
+      color: $btn-secondary-color !important;
     }
 
     @media (max-width: $tablet-md) {
@@ -31,7 +32,23 @@
     }
   }
   .active-number{
-    background-color: $standard-color;
+    background-color: red;
     color: $secondary !important;
+  }
+  .prev-btn{
+    border-radius: $radius;
+    background-color: $light-grey1;
+    color: $btn-secondary-color !important;
+    outline: none;
+    border: transparent;
+
+  }
+  .next-btn{
+    border-radius: $radius;
+    background-color: $light-grey1;
+    color: $btn-secondary-color !important;
+    outline: none;
+    border: transparent;
+
   }
 }

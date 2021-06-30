@@ -50,14 +50,14 @@ const DateContactTable = () => {
     const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
     const handleNextBtn = () => {
         setCurrentPage(currentPage + 1);
-        if (currentPage + 1 >maxPageNumberLimit){
+        if (currentPage + 1 > maxPageNumberLimit) {
             setMaxPageNUmberLimit(maxPageNumberLimit + pageNumberLimit)
             setMinPageNUmberLimit(minPageNumberLimit + pageNumberLimit)
         }
     };
     const handlePrevBtn = () => {
         setCurrentPage(currentPage - 1);
-        if ((currentPage - 1)%pageNumberLimit === 0){
+        if ((currentPage - 1) % pageNumberLimit === 0) {
             setMaxPageNUmberLimit(maxPageNumberLimit - pageNumberLimit)
             setMinPageNUmberLimit(minPageNumberLimit - pageNumberLimit)
         }
@@ -90,11 +90,19 @@ const DateContactTable = () => {
             </Card>
             <ul className='page-numbers'>
                 <li>
-                    <button onClick={handlePrevBtn}>prev</button>
+                    <button onClick={handlePrevBtn}
+                            disabled={currentPage === pages[0]}
+                            className='prev-btn'
+                    >prev
+                    </button>
                 </li>
                 {renderPageNumbers}
                 <li>
-                    <button onClick={handleNextBtn}>next</button>
+                    <button onClick={handleNextBtn}
+                            disabled={currentPage === pages[pages.length - 1]}
+                            className='next-btn'
+                    >next
+                    </button>
                 </li>
             </ul>
         </>
