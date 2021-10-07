@@ -1,2 +1,13 @@
 # AdminFirmeCadastru
 # AdminReactFC
+"bootstrap": "4.6.0",
+"chart.js": "2.9.4",
+"@fortawesome/fontawesome-free": "5.15.3",
+"flot": "themicon/flot",
+"react": "17.0.2",
+"react-router": "5.2.0",
+"react-router-bootstrap": "0.25.0",
+"react-router-dom": "5.2.0",
+"react-toastify": "4.5.2",
+"sass": "^1.32.11",
+"node-sass": "4.14.1",
