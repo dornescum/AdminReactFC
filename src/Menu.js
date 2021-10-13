@@ -1,8 +1,8 @@
 const Menu = [
-    {
-        heading: 'Main Navigation',
-        translate: 'sidebar.heading.HEADER'
-    },
+    // {
+    //     heading: 'Main Navigation',
+    //     translate: 'sidebar.heading.HEADER'
+    // },
     // {
     //     name: 'Dashboard',
     //     icon: 'icon-speedometer',
@@ -29,10 +29,10 @@ const Menu = [
     //     label: {value: 30, color: 'success'},
     //     translate: 'sidebar.nav.WIDGETS'
     // },
-    {
-        heading: 'Components',
-        translate: 'sidebar.heading.COMPONENTS'
-    },
+    // {
+    //     heading: 'Components',
+    //     translate: 'sidebar.heading.COMPONENTS'
+    // },
     // {
     //     name: 'Elements',
     //     icon: 'icon-chemistry',
@@ -163,18 +163,18 @@ const Menu = [
     //
     //     ]
     // },
-    {
-        name: 'Charts',
-        icon: 'icon-graph',
-        translate: 'sidebar.nav.chart.CHART',
-        submenu: [{
-            name: 'Flot',
-            path: '/chart-flot',
-            translate: 'sidebar.nav.chart.FLOT'
-        },
-
-        ]
-    },
+    // {
+    //     name: 'Charts',
+    //     icon: 'icon-graph',
+    //     translate: 'sidebar.nav.chart.CHART',
+    //     submenu: [{
+    //         name: 'Flot',
+    //         path: '/chart-flot',
+    //         translate: 'sidebar.nav.chart.FLOT'
+    //     },
+    //
+    //     ]
+    // },
     // {
     //     name: 'Tables',
     //     icon: 'icon-grid',
@@ -216,19 +216,24 @@ const Menu = [
     //         }
     //     ]
     // },
-    {
-        heading: 'More',
-        translate: 'sidebar.heading.MORE'
-    },
-    {
-        name: 'Pages',
-        icon: 'icon-doc',
-        translate: 'sidebar.nav.pages.PAGES',
-        submenu: [{
-            name: 'Login',
-            path: '/login',
-            translate: 'sidebar.nav.pages.LOGIN'
-        }
+    // {
+    //     heading: 'More',
+    //     translate: 'sidebar.heading.MORE'
+    // },
+    // {
+    //     name: 'Login',
+    //     path: '/login',
+    //     translate: 'sidebar.nav.pages.LOGIN'
+    // },
+    // {
+    //     name: 'Pages',
+    //     icon: 'icon-doc',
+    //     translate: 'sidebar.nav.pages.PAGES',
+    //     submenu: [{
+    //         name: 'Login',
+    //         path: '/login',
+    //         translate: 'sidebar.nav.pages.LOGIN'
+    //     }
         //     {
         //         name: 'Register',
         //         path: '/register',
@@ -257,8 +262,8 @@ const Menu = [
         //         path: '/maintenance'
         //     }
         // ]
-        ]
-    },
+    //     ]
+    // },
     // {
     //     name: 'Extras',
     //     icon: 'icon-cup',

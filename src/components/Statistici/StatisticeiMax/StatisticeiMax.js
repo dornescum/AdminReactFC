@@ -1,9 +1,8 @@
-import MaxDrop from "./MaxDrop";
-import MaxTable from './MaxTable'
+import PropDrilling from "./PropDrilling";
 const StatisticeiMax =()=>{
     return <>
-        <MaxDrop />
-        {/*<MaxTable />*/}
+        <PropDrilling />
+
     </>
 
 }

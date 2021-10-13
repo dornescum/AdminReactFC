@@ -124,7 +124,7 @@ const StatisticiMax = lazy(() => import('./components/Statistici/StatisticeiMax/
 // listed here to Switch between layouts
 // depending on the current pathname
 const listofPages = [
-    '/login',
+    // '/login',
     // '/register',
     // '/recover',
     // '/lock',
@@ -144,25 +144,25 @@ const Routes = ({ location }) => {
 
     const animationName = 'rag-fadeIn'
 
-    if(listofPages.indexOf(location.pathname) > -1) {
-        return (
-            // Page Layout component wrapper
-            <BasePage>
-                <Suspense fallback={<PageLoader/>}>
-                    <Switch location={location}>
-                        <Route path="/login" component={waitFor(Login)}/>
-                        {/*<Route path="/register" component={waitFor(Register)}/>*/}
-                        {/*<Route path="/recover" component={waitFor(Recover)}/>*/}
-                        {/*<Route path="/lock" component={waitFor(Lock)}/>*/}
-                        {/*<Route path="/notfound" component={waitFor(NotFound)}/>*/}
-                        {/*<Route path="/error500" component={waitFor(Error500)}/>*/}
-                        {/*<Route path="/maintenance" component={waitFor(Maintenance)}/>*/}
-                    </Switch>
-                </Suspense>
-            </BasePage>
-        )
-    }
-    else {
+    // if(listofPages.indexOf(location.pathname) > -1) {
+    //     return (
+    //         // Page Layout component wrapper
+    //         <BasePage>
+    //             <Suspense fallback={<PageLoader/>}>
+    //                 <Switch location={location}>
+    //                     <Route path="/login" component={waitFor(Login)}/>
+    //                     {/*<Route path="/register" component={waitFor(Register)}/>*/}
+    //                     {/*<Route path="/recover" component={waitFor(Recover)}/>*/}
+    //                     {/*<Route path="/lock" component={waitFor(Lock)}/>*/}
+    //                     {/*<Route path="/notfound" component={waitFor(NotFound)}/>*/}
+    //                     {/*<Route path="/error500" component={waitFor(Error500)}/>*/}
+    //                     {/*<Route path="/maintenance" component={waitFor(Maintenance)}/>*/}
+    //                 </Switch>
+    //             </Suspense>
+    //         </BasePage>
+    //     )
+    // }
+    // else {
         return (
             // Layout component wrapper
             // Use <BaseHorizontal> to change layout
@@ -283,7 +283,7 @@ const Routes = ({ location }) => {
 
                                 {/*<Route path="/forum" component={waitFor(ForumHome)}/>*/}
 
-                                {/*<Redirect to="/dashboardv1"/>*/}
+                                <Redirect to="/date-fiscale"/>
                             </Switch>
                         </Suspense>
                     </div>
@@ -291,7 +291,7 @@ const Routes = ({ location }) => {
               </TransitionGroup>
             </Base>
         )
-    }
+    // }
 }
 
 export default withRouter(Routes);
