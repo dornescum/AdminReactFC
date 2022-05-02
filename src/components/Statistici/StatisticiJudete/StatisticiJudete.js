@@ -35,18 +35,18 @@ const StatisticiJudete = () => {
         {id:12, name: 'decembrie'},
     ]
     const Years =[2018, 2019, 2020];
-    // let currentYear = Years[0];
-    // let currentMonth = 1;
+
      function fetchData (){
         const URL =`/data/info_${currentYear}.json`;
+         console.log(URL);
         fetch(URL)
         .then(res => res.json())
             .then(
                 (result) => {
-                    // console.log(result)
+
                     setIsLoaded(true);
                     setItems(result);
-                    // this.props.dispatch(result)
+
                 },
                 (error) => {
                     setIsLoaded(true);
@@ -54,24 +54,17 @@ const StatisticiJudete = () => {
                 }
             )
     }
-    useEffect(fetchData, [])
+    useEffect(fetchData, [currentYear])
 
 
     const filterMonth = (e) => {
         setCurrentMonth(e.target.value);
-        console.log(currentMonth);
         fetchData();
-        // setItems(items);
+
     }
     const changeYear = (e) => {
-        console.log(e.target.value);
-
+        fetchData();
         setCurrentYear(e.target.value);
-        console.log(currentYear);
-       fetchData();
-        // console.log(currentYear);
-
-        //  useEffect(fetchData, [])
     }
 
     if (error) {
@@ -90,8 +83,6 @@ const StatisticiJudete = () => {
                             <select className="custom-select" id="monthFilter"
                                     onChange={filterMonth}
                                     multiple={false}
-                                    // onChange={(e) => setItems(e.target.value)}
-                                    // value={}
                             >
                                 {Months.map((item) => {
                                     const {id, name} = item;

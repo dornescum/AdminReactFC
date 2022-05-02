@@ -33,6 +33,7 @@ const StatissticiMainGraf = () => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
+    const [year, setYear] =useState(2015)
     useEffect(() => {
         fetch('data/info.json')
             // .then(res => res.json())
@@ -75,7 +76,7 @@ const StatissticiMainGraf = () => {
                     </Col>
                     <Col lg='4'>
                         <div className='perioada-select'>
-                            <select defaultValue="" className="custom-select" value={2021} onChange={changeYear}>
+                            <select defaultValue="" className="custom-select" value={year} onChange={(e)=> setYear(e.target.value)}>
                                 <option>Anul</option>
                                 {years.map((item) => {
                                     return <option defaultValue="1" key={item.id}>{item.name}</option>

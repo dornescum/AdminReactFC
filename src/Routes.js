@@ -231,6 +231,8 @@ const Routes = ({ location }) => {
                                 <Route path="/statistici-max" component={waitFor(StatisticiMax)}/>
 
 
+
+
                                 {/*Charts*/}
                                 {/*<Route path="/chart-flot" component={waitFor(ChartFlot)}/>*/}
                                 {/*<Route path="/chart-radial" component={waitFor(ChartRadial)}/>*/}
